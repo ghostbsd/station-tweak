@@ -1,0 +1,284 @@
+# Danish translation for MATE Tweak
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mate-tweak\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-07 11:07+0100\n"
+"PO-Revision-Date: 2014-12-09 17:46+0000\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"Language-Team: Danish <da@li.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
+"X-Generator: Launchpad (build 17355)\n"
+
+#: ../mate-tweak:279
+msgid "Desktop"
+msgstr "Skrivebord"
+
+#: ../mate-tweak:280
+msgid "Windows"
+msgstr "Vinduer"
+
+#: ../mate-tweak:281
+msgid "Interface"
+msgstr "Grænseflade"
+
+#: ../mate-tweak:328
+msgid "Desktop icons"
+msgstr "Skrivebordsikoner"
+
+#: ../mate-tweak:329
+msgid "Performance"
+msgstr "Ydeevne"
+
+#: ../mate-tweak:330
+msgid "Appearance"
+msgstr "Udseende"
+
+#: ../mate-tweak:331
+msgid "Icons"
+msgstr "Ikoner"
+
+#: ../mate-tweak:332
+msgid "Context menus"
+msgstr "Kontekstmenuer"
+
+#: ../mate-tweak:333
+msgid "Toolbars"
+msgstr "Værktøjslinjer"
+
+#: ../mate-tweak:334
+msgid "Window Manager"
+msgstr "Vindueshåndtering"
+
+#: ../mate-tweak:336
+msgid "Select the items you want to see on the desktop:"
+msgstr "Vælg de ikoner der skal vises på skrivebordet:"
+
+#: ../mate-tweak:338
+msgid "Computer"
+msgstr "Computer"
+
+#: ../mate-tweak:339
+msgid "Home"
+msgstr "Hjem"
+
+#: ../mate-tweak:340
+msgid "Network"
+msgstr "Netværk"
+
+#: ../mate-tweak:341
+msgid "Trash"
+msgstr "Papirkurv"
+
+#: ../mate-tweak:342
+msgid "Mounted Volumes"
+msgstr "Monterede arkiver"
+
+#: ../mate-tweak:344
+msgid "Don't show window content while dragging them"
+msgstr "Vis ikke vinduers indhold, mens de flyttes"
+
+#: ../mate-tweak:345
+msgid "Use compositing"
+msgstr "Brug komposition"
+
+#: ../mate-tweak:347
+msgid "Buttons layout:"
+msgstr "Knappernes layout:"
+
+#: ../mate-tweak:348
+msgid "Window manager:"
+msgstr "Vindueshåndtering:"
+
+#: ../mate-tweak:350
+msgid "Show icons on menus"
+msgstr "Vis ikoner på menuer"
+
+#: ../mate-tweak:351
+msgid "Show icons on buttons"
+msgstr "Vis ikoner på knapper"
+
+#: ../mate-tweak:352
+msgid "Show Input Methods menu in context menus"
+msgstr "Vis Inputmetode-menu i kontekstmenuer"
+
+#: ../mate-tweak:353
+msgid "Show Unicode Control Character menu in context menus"
+msgstr "Vis Unicode-kontroltegnsmenu i kontekstmenuer"
+
+#: ../mate-tweak:355
+msgid "Buttons labels:"
+msgstr "Knappers etiketter:"
+
+#: ../mate-tweak:356
+msgid "Icon size:"
+msgstr "Ikonstørrelse:"
+
+#: ../mate-tweak:376
+msgid "Small"
+msgstr "Lille"
+
+#: ../mate-tweak:377
+msgid "Large"
+msgstr "Stor"
+
+#: ../mate-tweak:383
+#, fuzzy
+msgid "Traditional (Right)"
+msgstr "Traditionelt (højre)"
+
+#: ../mate-tweak:384
+msgid "Contemporary (Left)"
+msgstr ""
+
+#: ../mate-tweak:390
+#, fuzzy
+msgid "Marco (Simple desktop effects)"
+msgstr "Compiz (imponerende skrivebordseffekter)"
+
+#: ../mate-tweak:392
+#, fuzzy
+msgid "Compiz (Advanced GPU accelerated desktop effects)"
+msgstr "Compiz (imponerende skrivebordseffekter)"
+
+#: ../mate-tweak:394
+msgid "The new window manager will be activated upon selection."
+msgstr ""
+
+#: ../mate-tweak:422
+#, fuzzy
+msgid "MATE Desktop"
+msgstr "Skrivebord"
+
+#: ../mate-tweak:425
+msgid "Ubuntu MATE"
+msgstr ""
+
+#: ../mate-tweak:429
+msgid "Ubuntu MATE with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:433
+msgid "Ubuntu MATE with Indicators"
+msgstr ""
+
+#: ../mate-tweak:438
+msgid "Ubuntu MATE with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:441
+msgid "Redmond"
+msgstr ""
+
+#: ../mate-tweak:445
+msgid "Redmond with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:449
+msgid "Redmond with Indicators"
+msgstr ""
+
+#: ../mate-tweak:454
+msgid "Redmond with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:458
+msgid "Eleven"
+msgstr ""
+
+#: ../mate-tweak:462
+msgid "Eleven with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:466
+msgid "Eleven with Indicators"
+msgstr ""
+
+#: ../mate-tweak:471
+msgid "Eleven with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:475
+msgid "Linux Mint"
+msgstr ""
+
+#: ../mate-tweak:479
+msgid "openSUSE"
+msgstr ""
+
+#: ../mate-tweak:482
+msgid ""
+"The new panel layout will be activated on selection and destroy any "
+"customisations you might have made."
+msgstr ""
+
+#: ../mate-tweak:487
+msgid "Text below items"
+msgstr "Tekst under elementer"
+
+#: ../mate-tweak:488
+msgid "Text beside items"
+msgstr "Tekst ved siden af elementer"
+
+#: ../mate-tweak:489
+msgid "Icons only"
+msgstr "Kun ikoner"
+
+#: ../mate-tweak:490
+msgid "Text only"
+msgstr "Kun tekst"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminal"
+
+#~ msgid "Use system font in titlebar"
+#~ msgstr "Benyt systemskrifttype i titellinjen"
+
+#~ msgid "Show fortune cookies"
+#~ msgstr "Vis lykkekager"
+
+#~ msgid "Mac style (Left)"
+#~ msgstr "Mac-stil (venstre)"
+
+#~ msgid "Marco (stable and reliable)"
+#~ msgstr "Marco (stabil og pålidelig)"
+
+#~ msgid ""
+#~ "Log out and log back in for changes to take effect. If things go wrong, "
+#~ "run 'mate-wm-recovery' to switch back to Marco."
+#~ msgstr ""
+#~ "Du skal logge af og logge på igen, før ændringerne træder i kraft. Hvis "
+#~ "noget går galt, så kør \"mate-wm-recovery\" for at vende tilbage til "
+#~ "Marco."
+
+#~ msgid "Xfwm (stable and reliable)"
+#~ msgstr "Xfwm (stabil og pålidelig)"
+
+#~ msgid "Log out and log back in for changes to take effect."
+#~ msgstr "Log af og log på igen, før ændringerne træder i kraft."
+
+#~ msgid "Desktop Settings"
+#~ msgstr "Skrivebordsindstillinger"
+
+#~ msgid "Fine-tune desktop settings"
+#~ msgstr "Finjustér skrivebordsindstillingerne"
+
+#~ msgid "Desktop Items"
+#~ msgstr "Skrivebordselementer"
+
+#~ msgid "Gnome Settings"
+#~ msgstr "Gnome-indstillinger"
+
+#~ msgid "Fine-tune Gnome settings"
+#~ msgstr "Finjustér Gnomes indstillinger"
+
+#~ msgid "Desktop Configuration Tool"
+#~ msgstr "Værktøj til konfiguration af skrivebordet"

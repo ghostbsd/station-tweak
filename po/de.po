@@ -1,0 +1,236 @@
+# mate-tweak / i18n.
+# This file is distributed under the same license as the mate-tweak tool.
+# Copyright by the copyright holders of the mate-tweak tool.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mate-tweak VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-07 11:07+0100\n"
+"PO-Revision-Date: 2015-02-18 14:46+0100\n"
+"Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
+"Language-Team: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.6.10\n"
+
+#: ../mate-tweak:279
+msgid "Desktop"
+msgstr "Schreibtisch"
+
+#: ../mate-tweak:280
+msgid "Windows"
+msgstr "Fenster"
+
+#: ../mate-tweak:281
+msgid "Interface"
+msgstr "Schnittstelle"
+
+#: ../mate-tweak:328
+msgid "Desktop icons"
+msgstr "Desktopsymbole"
+
+#: ../mate-tweak:329
+msgid "Performance"
+msgstr "Leistung"
+
+#: ../mate-tweak:330
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#: ../mate-tweak:331
+msgid "Icons"
+msgstr "Symbole"
+
+#: ../mate-tweak:332
+msgid "Context menus"
+msgstr "Kontextmenüs"
+
+#: ../mate-tweak:333
+msgid "Toolbars"
+msgstr "Werkzeugleisten"
+
+#: ../mate-tweak:334
+msgid "Window Manager"
+msgstr "Fensterverwaltung"
+
+#: ../mate-tweak:336
+msgid "Select the items you want to see on the desktop:"
+msgstr ""
+"Bitte die Elemente auswählen, die auf dem Schreibtisch angezeigt werden "
+"sollen:"
+
+#: ../mate-tweak:338
+msgid "Computer"
+msgstr "Computer"
+
+#: ../mate-tweak:339
+msgid "Home"
+msgstr "Persönlicher Ordner"
+
+#: ../mate-tweak:340
+msgid "Network"
+msgstr "Netzwerk"
+
+#: ../mate-tweak:341
+msgid "Trash"
+msgstr "Müll"
+
+#: ../mate-tweak:342
+msgid "Mounted Volumes"
+msgstr "Eingebundene Verzeichnisse"
+
+#: ../mate-tweak:344
+msgid "Don't show window content while dragging them"
+msgstr "Fensterinhalt beim Verschieben nicht anzeigen"
+
+#: ../mate-tweak:345
+msgid "Use compositing"
+msgstr "Compositing verwenden"
+
+#: ../mate-tweak:347
+msgid "Buttons layout:"
+msgstr "Anordnung Buttons:"
+
+#: ../mate-tweak:348
+msgid "Window manager:"
+msgstr "Fensterverwaltung"
+
+#: ../mate-tweak:350
+msgid "Show icons on menus"
+msgstr "Icons im Menü anzeigen"
+
+#: ../mate-tweak:351
+msgid "Show icons on buttons"
+msgstr "Icons auf Buttons anzeigen"
+
+#: ../mate-tweak:352
+msgid "Show Input Methods menu in context menus"
+msgstr "Zeige Eingabemethoden-Menü in Kontextmenüs an"
+
+#: ../mate-tweak:353
+msgid "Show Unicode Control Character menu in context menus"
+msgstr "Zeige Unicode Steuerzeichen Menü im Kontextmenü an"
+
+#: ../mate-tweak:355
+msgid "Buttons labels:"
+msgstr "Beschriftung Buttons:"
+
+#: ../mate-tweak:356
+msgid "Icon size:"
+msgstr "Symbolgröße"
+
+#: ../mate-tweak:376
+msgid "Small"
+msgstr "Klein"
+
+#: ../mate-tweak:377
+msgid "Large"
+msgstr "Groß"
+
+#: ../mate-tweak:383
+msgid "Traditional (Right)"
+msgstr "Traditionell (rechts)"
+
+#: ../mate-tweak:384
+msgid "Contemporary (Left)"
+msgstr "Zeitgenössisch (links)"
+
+#: ../mate-tweak:390
+msgid "Marco (Simple desktop effects)"
+msgstr "Marco (einfache Desktop-Effekte)"
+
+#: ../mate-tweak:392
+msgid "Compiz (Advanced GPU accelerated desktop effects)"
+msgstr "Compiz (anspruchsvolle Desktop-Effekte mit Grafikkartenbeschleunigung)"
+
+#: ../mate-tweak:394
+msgid "The new window manager will be activated upon selection."
+msgstr "Die neue Fensterverwaltung wird bei Auswahl aktiviert."
+
+#: ../mate-tweak:422
+msgid "MATE Desktop"
+msgstr "MATE Desktop"
+
+#: ../mate-tweak:425
+msgid "Ubuntu MATE"
+msgstr "Ubuntu MATE"
+
+#: ../mate-tweak:429
+msgid "Ubuntu MATE with MATE Menu"
+msgstr "Ubuntu MATE mit MATE Menü"
+
+#: ../mate-tweak:433
+msgid "Ubuntu MATE with Indicators"
+msgstr "Ubuntu MATE mit Indikatoren"
+
+#: ../mate-tweak:438
+msgid "Ubuntu MATE with Indicators and MATE Menu"
+msgstr "Ubuntu MATE mit Indikatoren und MATE Menü"
+
+#: ../mate-tweak:441
+msgid "Redmond"
+msgstr "Redmond"
+
+#: ../mate-tweak:445
+msgid "Redmond with MATE Menu"
+msgstr "Redmond mit MATE Menü"
+
+#: ../mate-tweak:449
+msgid "Redmond with Indicators"
+msgstr "Redmond mit Indikatoren"
+
+#: ../mate-tweak:454
+msgid "Redmond with Indicators and MATE Menu"
+msgstr "Redmond mit Indikatoren und MATE Menü"
+
+#: ../mate-tweak:458
+msgid "Eleven"
+msgstr "Elf"
+
+#: ../mate-tweak:462
+msgid "Eleven with MATE Menu"
+msgstr "Elf mit MATE Menü"
+
+#: ../mate-tweak:466
+msgid "Eleven with Indicators"
+msgstr "Eleven mit Indikatoren"
+
+#: ../mate-tweak:471
+msgid "Eleven with Indicators and MATE Menu"
+msgstr "Eleven mit Indikatoren und MATE Menü"
+
+#: ../mate-tweak:475
+msgid "Linux Mint"
+msgstr "Linux Mint"
+
+#: ../mate-tweak:479
+msgid "openSUSE"
+msgstr "openSUSE"
+
+#: ../mate-tweak:482
+msgid ""
+"The new panel layout will be activated on selection and destroy any "
+"customisations you might have made."
+msgstr ""
+"Das neue Panel Layout wird bei Auswahl aktiviert, jegliche eigene "
+"Anpassungen werden verworfen."
+
+#: ../mate-tweak:487
+msgid "Text below items"
+msgstr "Text unter den Elementen"
+
+#: ../mate-tweak:488
+msgid "Text beside items"
+msgstr "Text neben den Elementen"
+
+#: ../mate-tweak:489
+msgid "Icons only"
+msgstr "nur Symbole"
+
+#: ../mate-tweak:490
+msgid "Text only"
+msgstr "nur Text"

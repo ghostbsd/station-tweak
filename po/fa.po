@@ -1,0 +1,265 @@
+# Persian translation for MATE Tweak
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mate-tweak\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-07 11:07+0100\n"
+"PO-Revision-Date: 2012-01-26 08:28+0000\n"
+"Last-Translator: Sari Galin <Unknown>\n"
+"Language-Team: Persian <fa@li.org>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-02-25 10:22+0000\n"
+"X-Generator: Launchpad (build 17355)\n"
+
+#: ../mate-tweak:279
+msgid "Desktop"
+msgstr "میزکار"
+
+#: ../mate-tweak:280
+msgid "Windows"
+msgstr "پنجره‌ها"
+
+#: ../mate-tweak:281
+msgid "Interface"
+msgstr "واسط"
+
+#: ../mate-tweak:328
+msgid "Desktop icons"
+msgstr "آیکون‌های میزکار"
+
+#: ../mate-tweak:329
+msgid "Performance"
+msgstr "کارایی"
+
+#: ../mate-tweak:330
+msgid "Appearance"
+msgstr "ظاهر"
+
+#: ../mate-tweak:331
+msgid "Icons"
+msgstr "آیکون‌ها"
+
+#: ../mate-tweak:332
+msgid "Context menus"
+msgstr "منو‌های زمینه"
+
+#: ../mate-tweak:333
+msgid "Toolbars"
+msgstr "نوارهای ابزار"
+
+#: ../mate-tweak:334
+msgid "Window Manager"
+msgstr ""
+
+#: ../mate-tweak:336
+msgid "Select the items you want to see on the desktop:"
+msgstr "گزینه هایی که می خواهید در میزکار مشاهده نمایید، را انتخاب نمایید:"
+
+#: ../mate-tweak:338
+msgid "Computer"
+msgstr "رایانه"
+
+#: ../mate-tweak:339
+msgid "Home"
+msgstr "خانه"
+
+#: ../mate-tweak:340
+msgid "Network"
+msgstr "شبکه"
+
+#: ../mate-tweak:341
+msgid "Trash"
+msgstr "زباله‌دان"
+
+#: ../mate-tweak:342
+msgid "Mounted Volumes"
+msgstr "درایو‌های نصب‌شده"
+
+#: ../mate-tweak:344
+msgid "Don't show window content while dragging them"
+msgstr "محتوای پنجره‌ها را در هنگام جابجایی آن‌ها نشان نده"
+
+#: ../mate-tweak:345
+msgid "Use compositing"
+msgstr ""
+
+#: ../mate-tweak:347
+msgid "Buttons layout:"
+msgstr "آرایش دکمه‌ها"
+
+#: ../mate-tweak:348
+msgid "Window manager:"
+msgstr ""
+
+#: ../mate-tweak:350
+msgid "Show icons on menus"
+msgstr "نمایش آیکون‌ها در منوها"
+
+#: ../mate-tweak:351
+msgid "Show icons on buttons"
+msgstr "نمایش آیکون‌ها در دکمه‌ها"
+
+#: ../mate-tweak:352
+msgid "Show Input Methods menu in context menus"
+msgstr "نمایش منوی روش‌های ورود در منوهای زمینه"
+
+#: ../mate-tweak:353
+msgid "Show Unicode Control Character menu in context menus"
+msgstr "نمایش منوی نویسه(کاراکتر) یونیکد در منوهای زمینه"
+
+#: ../mate-tweak:355
+msgid "Buttons labels:"
+msgstr "برچسب‌های دکمه‌ها"
+
+#: ../mate-tweak:356
+msgid "Icon size:"
+msgstr "اندازه آیکون"
+
+#: ../mate-tweak:376
+msgid "Small"
+msgstr "کوچک"
+
+#: ../mate-tweak:377
+msgid "Large"
+msgstr "بزرگ"
+
+#: ../mate-tweak:383
+#, fuzzy
+msgid "Traditional (Right)"
+msgstr "سبک سنتی (راست)"
+
+#: ../mate-tweak:384
+msgid "Contemporary (Left)"
+msgstr ""
+
+#: ../mate-tweak:390
+msgid "Marco (Simple desktop effects)"
+msgstr ""
+
+#: ../mate-tweak:392
+msgid "Compiz (Advanced GPU accelerated desktop effects)"
+msgstr ""
+
+#: ../mate-tweak:394
+msgid "The new window manager will be activated upon selection."
+msgstr ""
+
+#: ../mate-tweak:422
+#, fuzzy
+msgid "MATE Desktop"
+msgstr "میزکار"
+
+#: ../mate-tweak:425
+msgid "Ubuntu MATE"
+msgstr ""
+
+#: ../mate-tweak:429
+msgid "Ubuntu MATE with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:433
+msgid "Ubuntu MATE with Indicators"
+msgstr ""
+
+#: ../mate-tweak:438
+msgid "Ubuntu MATE with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:441
+msgid "Redmond"
+msgstr ""
+
+#: ../mate-tweak:445
+msgid "Redmond with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:449
+msgid "Redmond with Indicators"
+msgstr ""
+
+#: ../mate-tweak:454
+msgid "Redmond with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:458
+msgid "Eleven"
+msgstr ""
+
+#: ../mate-tweak:462
+msgid "Eleven with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:466
+msgid "Eleven with Indicators"
+msgstr ""
+
+#: ../mate-tweak:471
+msgid "Eleven with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:475
+msgid "Linux Mint"
+msgstr ""
+
+#: ../mate-tweak:479
+msgid "openSUSE"
+msgstr ""
+
+#: ../mate-tweak:482
+msgid ""
+"The new panel layout will be activated on selection and destroy any "
+"customisations you might have made."
+msgstr ""
+
+#: ../mate-tweak:487
+msgid "Text below items"
+msgstr "نمایش متن در زیر دکمه‌ها"
+
+#: ../mate-tweak:488
+msgid "Text beside items"
+msgstr "نمایش متن در کنار دکمه‌ها"
+
+#: ../mate-tweak:489
+msgid "Icons only"
+msgstr "فقط نمایش آیکون‌ها"
+
+#: ../mate-tweak:490
+msgid "Text only"
+msgstr "فقط نمایش متن"
+
+#~ msgid "Terminal"
+#~ msgstr "ترمینال"
+
+#~ msgid "Use system font in titlebar"
+#~ msgstr "استفاده از فونت سیستم در نوار عنوان"
+
+#~ msgid "Show fortune cookies"
+#~ msgstr "نمایش کوکی‌های شانس"
+
+#~ msgid "Mac style (Left)"
+#~ msgstr "سبک مکینتاش (چپ)"
+
+#~ msgid "Desktop Settings"
+#~ msgstr "تنظیمات میزکار"
+
+#~ msgid "Fine-tune desktop settings"
+#~ msgstr "تنظیمات ریز-کوک‌کردن میزکار"
+
+#~ msgid "Fine-tune Gnome settings"
+#~ msgstr "تنظیمات ظریف گنو"
+
+#~ msgid "Gnome Settings"
+#~ msgstr "تنظیمات گنو"
+
+#~ msgid "Desktop Items"
+#~ msgstr "گزینه‌های میزکار"
+
+#~ msgid "Desktop Configuration Tool"
+#~ msgstr "ابزار پیکربندی میزکار"

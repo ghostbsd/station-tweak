@@ -1,0 +1,282 @@
+# Italian translation for MATE Tweak
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mate-tweak\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-07 11:07+0100\n"
+"PO-Revision-Date: 2014-12-30 20:44+0000\n"
+"Last-Translator: Pierluigi Zavaroni <zavamail@yahoo.com>\n"
+"Language-Team: Italian <it@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
+"X-Generator: Launchpad (build 17355)\n"
+
+#: ../mate-tweak:279
+msgid "Desktop"
+msgstr "Desktop"
+
+#: ../mate-tweak:280
+msgid "Windows"
+msgstr "Finestre"
+
+#: ../mate-tweak:281
+msgid "Interface"
+msgstr "Interfaccia"
+
+#: ../mate-tweak:328
+msgid "Desktop icons"
+msgstr "Icone del desktop"
+
+#: ../mate-tweak:329
+msgid "Performance"
+msgstr "Prestazioni"
+
+#: ../mate-tweak:330
+msgid "Appearance"
+msgstr "Aspetto"
+
+#: ../mate-tweak:331
+msgid "Icons"
+msgstr "Icone"
+
+#: ../mate-tweak:332
+msgid "Context menus"
+msgstr "Menu contestuali"
+
+#: ../mate-tweak:333
+msgid "Toolbars"
+msgstr "Barre degli strumenti"
+
+#: ../mate-tweak:334
+msgid "Window Manager"
+msgstr "Gestore finestre"
+
+#: ../mate-tweak:336
+msgid "Select the items you want to see on the desktop:"
+msgstr "Seleziona gli oggetti da visualizzare sul desktop:"
+
+#: ../mate-tweak:338
+msgid "Computer"
+msgstr "Computer"
+
+#: ../mate-tweak:339
+msgid "Home"
+msgstr "Home"
+
+#: ../mate-tweak:340
+msgid "Network"
+msgstr "Rete"
+
+#: ../mate-tweak:341
+msgid "Trash"
+msgstr "Cestino"
+
+#: ../mate-tweak:342
+msgid "Mounted Volumes"
+msgstr "Volumi montati"
+
+#: ../mate-tweak:344
+msgid "Don't show window content while dragging them"
+msgstr "Non mostrare il contenuto delle finestre durante il trascinamento"
+
+#: ../mate-tweak:345
+msgid "Use compositing"
+msgstr "Usa compositing"
+
+#: ../mate-tweak:347
+msgid "Buttons layout:"
+msgstr "Disposizione dei pulsanti:"
+
+#: ../mate-tweak:348
+msgid "Window manager:"
+msgstr "Gestore finestre"
+
+#: ../mate-tweak:350
+msgid "Show icons on menus"
+msgstr "Mostra icone nei menu"
+
+#: ../mate-tweak:351
+msgid "Show icons on buttons"
+msgstr "Mostra le icone sui pulsanti"
+
+#: ../mate-tweak:352
+msgid "Show Input Methods menu in context menus"
+msgstr "Mostra menu dei metodi di input nei menu contestuali"
+
+#: ../mate-tweak:353
+msgid "Show Unicode Control Character menu in context menus"
+msgstr "Mostra menu dei caratteri di controllo Unicode nei menu contestuali"
+
+#: ../mate-tweak:355
+msgid "Buttons labels:"
+msgstr "Etichette dei pulsanti:"
+
+#: ../mate-tweak:356
+msgid "Icon size:"
+msgstr "Dimensione icone:"
+
+#: ../mate-tweak:376
+msgid "Small"
+msgstr "Piccola"
+
+#: ../mate-tweak:377
+msgid "Large"
+msgstr "Grande"
+
+#: ../mate-tweak:383
+#, fuzzy
+msgid "Traditional (Right)"
+msgstr "Stile tradizionale (destra)"
+
+#: ../mate-tweak:384
+msgid "Contemporary (Left)"
+msgstr ""
+
+#: ../mate-tweak:390
+#, fuzzy
+msgid "Marco (Simple desktop effects)"
+msgstr "Compiz (impressionanti effetti desktop)"
+
+#: ../mate-tweak:392
+#, fuzzy
+msgid "Compiz (Advanced GPU accelerated desktop effects)"
+msgstr "Compiz (impressionanti effetti desktop)"
+
+#: ../mate-tweak:394
+msgid "The new window manager will be activated upon selection."
+msgstr ""
+
+#: ../mate-tweak:422
+#, fuzzy
+msgid "MATE Desktop"
+msgstr "Desktop"
+
+#: ../mate-tweak:425
+msgid "Ubuntu MATE"
+msgstr ""
+
+#: ../mate-tweak:429
+msgid "Ubuntu MATE with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:433
+msgid "Ubuntu MATE with Indicators"
+msgstr ""
+
+#: ../mate-tweak:438
+msgid "Ubuntu MATE with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:441
+msgid "Redmond"
+msgstr ""
+
+#: ../mate-tweak:445
+msgid "Redmond with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:449
+msgid "Redmond with Indicators"
+msgstr ""
+
+#: ../mate-tweak:454
+msgid "Redmond with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:458
+msgid "Eleven"
+msgstr ""
+
+#: ../mate-tweak:462
+msgid "Eleven with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:466
+msgid "Eleven with Indicators"
+msgstr ""
+
+#: ../mate-tweak:471
+msgid "Eleven with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:475
+msgid "Linux Mint"
+msgstr ""
+
+#: ../mate-tweak:479
+msgid "openSUSE"
+msgstr ""
+
+#: ../mate-tweak:482
+msgid ""
+"The new panel layout will be activated on selection and destroy any "
+"customisations you might have made."
+msgstr ""
+
+#: ../mate-tweak:487
+msgid "Text below items"
+msgstr "Testo sotto le icone"
+
+#: ../mate-tweak:488
+msgid "Text beside items"
+msgstr "Testo accanto alle icone"
+
+#: ../mate-tweak:489
+msgid "Icons only"
+msgstr "Solo icone"
+
+#: ../mate-tweak:490
+msgid "Text only"
+msgstr "Solo testo"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminale"
+
+#~ msgid "Use system font in titlebar"
+#~ msgstr "Usa il carattere di sistema nella barra del titolo"
+
+#~ msgid "Show fortune cookies"
+#~ msgstr "Mostra battute di spirito in apertura"
+
+#~ msgid "Mac style (Left)"
+#~ msgstr "Stile Mac (sinistra)"
+
+#~ msgid "Marco (stable and reliable)"
+#~ msgstr "Marco (stabile e affidabile)"
+
+#~ msgid ""
+#~ "Log out and log back in for changes to take effect. If things go wrong, "
+#~ "run 'mate-wm-recovery' to switch back to Marco."
+#~ msgstr ""
+#~ "Disconnettiti e riconnettiti perché le impostazioni abbiano effetto. se "
+#~ "qualcosa va storto, esegui 'mate-wm-recovery' per tornare a Marco"
+
+#~ msgid "Log out and log back in for changes to take effect."
+#~ msgstr ""
+#~ "Effettua il logout e poi di nuovo il login perché le modifiche diventino "
+#~ "effettive."
+
+#~ msgid "Desktop Settings"
+#~ msgstr "Impostazioni del desktop"
+
+#~ msgid "Fine-tune desktop settings"
+#~ msgstr "Impostazioni desktop avanzate"
+
+#~ msgid "Gnome Settings"
+#~ msgstr "Impostazioni di Gnome"
+
+#~ msgid "Fine-tune Gnome settings"
+#~ msgstr "Impostazioni avanzate di Gnome"
+
+#~ msgid "Desktop Items"
+#~ msgstr "Elementi della scrivania"
+
+#~ msgid "Desktop Configuration Tool"
+#~ msgstr "Strumento di configurazione del desktop"

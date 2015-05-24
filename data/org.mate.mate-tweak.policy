@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC 
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" 
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>ubuntu-mate</vendor>
+  <vendor_url>http://hal.freedesktop.org/docs/PolicyKit/</vendor_url>
+
+  <action id="org.freedesktop.policykit.pkexec.disable-mate-volume-applet">
+    <description>MATE Tweak Authentication dialogue</description>
+    <message>This will disable the MATE Volume Applet from auto-starting
+    because the Sound Indicator is automatically loaded when an Indicator
+    enabled panel layout is selected.</message>
+    <icon_name>system-run</icon_name>
+    <defaults>
+      <allow_any>yes</allow_any>
+      <allow_inactive>auth_self</allow_inactive>
+      <allow_active>auth_self_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/local/lib/mate-tweak/disable-mate-volume-applet</annotate>
+  </action>
+
+  <action id="org.freedesktop.policykit.pkexec.mate-panel-backup">
+    <description>MATE Tweak Authentication dialogue</description>
+    <message>This will backup your MATE panel layout to
+    /usr/local/share/mate-panel/layouts.</message>
+    <icon_name>system-run</icon_name>
+    <defaults>
+      <allow_any>yes</allow_any>
+      <allow_inactive>auth_self</allow_inactive>
+      <allow_active>auth_self_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/local/lib/mate-tweak/mate-panel-backup</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action>
+
+</policyconfig>

@@ -1,0 +1,284 @@
+# Catalan translation for MATE Tweak
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mate-tweak\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-07 11:07+0100\n"
+"PO-Revision-Date: 2014-12-09 17:37+0000\n"
+"Last-Translator: Isidro Pisa <isidro@utils.info>\n"
+"Language-Team: Catalan <ca@li.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
+"X-Generator: Launchpad (build 17355)\n"
+
+#: ../mate-tweak:279
+msgid "Desktop"
+msgstr "Escriptori"
+
+#: ../mate-tweak:280
+msgid "Windows"
+msgstr "Finestres"
+
+#: ../mate-tweak:281
+msgid "Interface"
+msgstr "Interfície"
+
+#: ../mate-tweak:328
+msgid "Desktop icons"
+msgstr "Icones a l'escriptori"
+
+#: ../mate-tweak:329
+msgid "Performance"
+msgstr "Rendiment"
+
+#: ../mate-tweak:330
+msgid "Appearance"
+msgstr "Aparença"
+
+#: ../mate-tweak:331
+msgid "Icons"
+msgstr "Icones"
+
+#: ../mate-tweak:332
+msgid "Context menus"
+msgstr "Menús contextuals"
+
+#: ../mate-tweak:333
+msgid "Toolbars"
+msgstr "Barres d'eines"
+
+#: ../mate-tweak:334
+msgid "Window Manager"
+msgstr "Gestor de finestres"
+
+#: ../mate-tweak:336
+msgid "Select the items you want to see on the desktop:"
+msgstr "Trieu els elements que vulgueu veure a l'escriptori"
+
+#: ../mate-tweak:338
+msgid "Computer"
+msgstr "Ordinador"
+
+#: ../mate-tweak:339
+msgid "Home"
+msgstr "Inici"
+
+#: ../mate-tweak:340
+msgid "Network"
+msgstr "Xarxa"
+
+#: ../mate-tweak:341
+msgid "Trash"
+msgstr "Paperera"
+
+#: ../mate-tweak:342
+msgid "Mounted Volumes"
+msgstr "Volums muntats"
+
+#: ../mate-tweak:344
+msgid "Don't show window content while dragging them"
+msgstr "No mostris el contingut de les finestres mentre son arrossegades"
+
+#: ../mate-tweak:345
+msgid "Use compositing"
+msgstr "Utilitza la composició"
+
+#: ../mate-tweak:347
+msgid "Buttons layout:"
+msgstr "Disposició dels botons:"
+
+#: ../mate-tweak:348
+msgid "Window manager:"
+msgstr "Gestor de finestres:"
+
+#: ../mate-tweak:350
+msgid "Show icons on menus"
+msgstr "Mostra les icones als menús"
+
+#: ../mate-tweak:351
+msgid "Show icons on buttons"
+msgstr "Mostra les icones als botons"
+
+#: ../mate-tweak:352
+msgid "Show Input Methods menu in context menus"
+msgstr "Mostra el menú de Mètodes d'Entrada als menús contextuals"
+
+#: ../mate-tweak:353
+msgid "Show Unicode Control Character menu in context menus"
+msgstr "Mostra el menú de Caràcter de Control d'Unicode als menús contextuals"
+
+#: ../mate-tweak:355
+msgid "Buttons labels:"
+msgstr "Etiquetes dels bottons:"
+
+#: ../mate-tweak:356
+msgid "Icon size:"
+msgstr "Mida de la icona:"
+
+#: ../mate-tweak:376
+msgid "Small"
+msgstr "Petita"
+
+#: ../mate-tweak:377
+msgid "Large"
+msgstr "Gran"
+
+#: ../mate-tweak:383
+#, fuzzy
+msgid "Traditional (Right)"
+msgstr "Estil tradicional (Dreta)"
+
+#: ../mate-tweak:384
+msgid "Contemporary (Left)"
+msgstr ""
+
+#: ../mate-tweak:390
+#, fuzzy
+msgid "Marco (Simple desktop effects)"
+msgstr "Compiz (efectes d'escriptori impressionants)"
+
+#: ../mate-tweak:392
+#, fuzzy
+msgid "Compiz (Advanced GPU accelerated desktop effects)"
+msgstr "Compiz (efectes d'escriptori impressionants)"
+
+#: ../mate-tweak:394
+msgid "The new window manager will be activated upon selection."
+msgstr ""
+
+#: ../mate-tweak:422
+#, fuzzy
+msgid "MATE Desktop"
+msgstr "Escriptori"
+
+#: ../mate-tweak:425
+msgid "Ubuntu MATE"
+msgstr ""
+
+#: ../mate-tweak:429
+msgid "Ubuntu MATE with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:433
+msgid "Ubuntu MATE with Indicators"
+msgstr ""
+
+#: ../mate-tweak:438
+msgid "Ubuntu MATE with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:441
+msgid "Redmond"
+msgstr ""
+
+#: ../mate-tweak:445
+msgid "Redmond with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:449
+msgid "Redmond with Indicators"
+msgstr ""
+
+#: ../mate-tweak:454
+msgid "Redmond with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:458
+msgid "Eleven"
+msgstr ""
+
+#: ../mate-tweak:462
+msgid "Eleven with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:466
+msgid "Eleven with Indicators"
+msgstr ""
+
+#: ../mate-tweak:471
+msgid "Eleven with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:475
+msgid "Linux Mint"
+msgstr ""
+
+#: ../mate-tweak:479
+msgid "openSUSE"
+msgstr ""
+
+#: ../mate-tweak:482
+msgid ""
+"The new panel layout will be activated on selection and destroy any "
+"customisations you might have made."
+msgstr ""
+
+#: ../mate-tweak:487
+msgid "Text below items"
+msgstr "Text sota els elements"
+
+#: ../mate-tweak:488
+msgid "Text beside items"
+msgstr "Text al costat dels elements"
+
+#: ../mate-tweak:489
+msgid "Icons only"
+msgstr "Només les icones"
+
+#: ../mate-tweak:490
+msgid "Text only"
+msgstr "Només text"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminal"
+
+#~ msgid "Use system font in titlebar"
+#~ msgstr "Usa la font del sistema a la barra del títol"
+
+#~ msgid "Show fortune cookies"
+#~ msgstr "Mostra cites de fortune a la terminal"
+
+#~ msgid "Mac style (Left)"
+#~ msgstr "Estil Mac (Esquerra)"
+
+#~ msgid "Marco (stable and reliable)"
+#~ msgstr "Marco (estable i fiable)"
+
+#~ msgid ""
+#~ "Log out and log back in for changes to take effect. If things go wrong, "
+#~ "run 'mate-wm-recovery' to switch back to Marco."
+#~ msgstr ""
+#~ "Tanqui la sessió i reinicïi-la per aplicar els canvis. Si quelcom va "
+#~ "malament, executi 'mate-wm-recovery' per tornar a Marco."
+
+#~ msgid "Xfwm (stable and reliable)"
+#~ msgstr "Xfwm (estable i confiable)"
+
+#~ msgid "Log out and log back in for changes to take effect."
+#~ msgstr ""
+#~ "Tanqueu i obriu de nou la sessió per tal que els canvis tinguin efecte."
+
+#~ msgid "Desktop Settings"
+#~ msgstr "Configuració de l'escriptori"
+
+#~ msgid "Fine-tune desktop settings"
+#~ msgstr "Ajust detallat d'opcions d'escriptori"
+
+#~ msgid "Desktop Configuration Tool"
+#~ msgstr "Eina de configuració de l'Escriptori"
+
+#~ msgid "Desktop Items"
+#~ msgstr "Elements de l'escriptori"
+
+#~ msgid "Gnome Settings"
+#~ msgstr "Paràmetres de Gnome"
+
+#~ msgid "Fine-tune Gnome settings"
+#~ msgstr "Ajustament precís dels paràmetres de Gnome"

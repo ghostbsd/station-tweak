@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=MATE Tweak
+Exec=mate-tweak
+Icon=user-desktop
+Terminal=false
+Type=Application
+Categories=GTK;Settings;DesktopSettings;
+StartupNotify=false
+OnlyShowIn=MATE;
+Keywords=MATE;desktop;marco;compiz;theming;customize;fine;tune;tweak;adapt;

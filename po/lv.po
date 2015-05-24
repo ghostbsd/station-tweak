@@ -1,0 +1,265 @@
+# Latvian translation for MATE Tweak
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mate-tweak\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-07 11:07+0100\n"
+"PO-Revision-Date: 2014-04-28 17:36+0000\n"
+"Last-Translator: Juris Daikteris <juris.daikteris@gmail.com>\n"
+"Language-Team: Latvian <lv@li.org>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
+"X-Generator: Launchpad (build 17355)\n"
+
+#: ../mate-tweak:279
+msgid "Desktop"
+msgstr "Darbvirsma"
+
+#: ../mate-tweak:280
+msgid "Windows"
+msgstr "Logi"
+
+#: ../mate-tweak:281
+msgid "Interface"
+msgstr "Saskarne"
+
+#: ../mate-tweak:328
+msgid "Desktop icons"
+msgstr "Darbvirsmas ikonas"
+
+#: ../mate-tweak:329
+msgid "Performance"
+msgstr "Veiktspēja"
+
+#: ../mate-tweak:330
+msgid "Appearance"
+msgstr "Izskats"
+
+#: ../mate-tweak:331
+msgid "Icons"
+msgstr "Ikonas"
+
+#: ../mate-tweak:332
+msgid "Context menus"
+msgstr "Konteksta izvēlnes"
+
+#: ../mate-tweak:333
+msgid "Toolbars"
+msgstr "Rīkjoslas"
+
+#: ../mate-tweak:334
+msgid "Window Manager"
+msgstr ""
+
+#: ../mate-tweak:336
+msgid "Select the items you want to see on the desktop:"
+msgstr "Izvēlieties elementus, kurus vēlaties redzēt uz darbvirsmas"
+
+#: ../mate-tweak:338
+msgid "Computer"
+msgstr "Dators"
+
+#: ../mate-tweak:339
+msgid "Home"
+msgstr "Mājas"
+
+#: ../mate-tweak:340
+msgid "Network"
+msgstr "Tīkls"
+
+#: ../mate-tweak:341
+msgid "Trash"
+msgstr "Miskaste"
+
+#: ../mate-tweak:342
+msgid "Mounted Volumes"
+msgstr "Atmiņas ierīces"
+
+#: ../mate-tweak:344
+msgid "Don't show window content while dragging them"
+msgstr "Nerādīt logu saturu, tos pārvietojot"
+
+#: ../mate-tweak:345
+msgid "Use compositing"
+msgstr "Lietot kompozicionēšanu"
+
+#: ../mate-tweak:347
+msgid "Buttons layout:"
+msgstr "Pogu izkārtojums:"
+
+#: ../mate-tweak:348
+msgid "Window manager:"
+msgstr ""
+
+#: ../mate-tweak:350
+msgid "Show icons on menus"
+msgstr "Rādīt ikonas izvēlnēs"
+
+#: ../mate-tweak:351
+msgid "Show icons on buttons"
+msgstr "Rādīt ikonas uz pogām"
+
+#: ../mate-tweak:352
+msgid "Show Input Methods menu in context menus"
+msgstr "Rādīt Ievadīšanas Metožu izvēlni kontekstu izvēlnēs"
+
+#: ../mate-tweak:353
+msgid "Show Unicode Control Character menu in context menus"
+msgstr "Rādīt Unikoda Kontroles Simbolu izvēlni kontekstu izvēlnēs"
+
+#: ../mate-tweak:355
+msgid "Buttons labels:"
+msgstr "Pogu norādes:"
+
+#: ../mate-tweak:356
+msgid "Icon size:"
+msgstr "Ikonu izmērs:"
+
+#: ../mate-tweak:376
+msgid "Small"
+msgstr "Mazs"
+
+#: ../mate-tweak:377
+msgid "Large"
+msgstr "Liels"
+
+#: ../mate-tweak:383
+#, fuzzy
+msgid "Traditional (Right)"
+msgstr "Tradicionālais stils (labā puse)"
+
+#: ../mate-tweak:384
+msgid "Contemporary (Left)"
+msgstr ""
+
+#: ../mate-tweak:390
+msgid "Marco (Simple desktop effects)"
+msgstr ""
+
+#: ../mate-tweak:392
+msgid "Compiz (Advanced GPU accelerated desktop effects)"
+msgstr ""
+
+#: ../mate-tweak:394
+msgid "The new window manager will be activated upon selection."
+msgstr ""
+
+#: ../mate-tweak:422
+#, fuzzy
+msgid "MATE Desktop"
+msgstr "Darbvirsma"
+
+#: ../mate-tweak:425
+msgid "Ubuntu MATE"
+msgstr ""
+
+#: ../mate-tweak:429
+msgid "Ubuntu MATE with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:433
+msgid "Ubuntu MATE with Indicators"
+msgstr ""
+
+#: ../mate-tweak:438
+msgid "Ubuntu MATE with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:441
+msgid "Redmond"
+msgstr ""
+
+#: ../mate-tweak:445
+msgid "Redmond with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:449
+msgid "Redmond with Indicators"
+msgstr ""
+
+#: ../mate-tweak:454
+msgid "Redmond with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:458
+msgid "Eleven"
+msgstr ""
+
+#: ../mate-tweak:462
+msgid "Eleven with MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:466
+msgid "Eleven with Indicators"
+msgstr ""
+
+#: ../mate-tweak:471
+msgid "Eleven with Indicators and MATE Menu"
+msgstr ""
+
+#: ../mate-tweak:475
+msgid "Linux Mint"
+msgstr ""
+
+#: ../mate-tweak:479
+msgid "openSUSE"
+msgstr ""
+
+#: ../mate-tweak:482
+msgid ""
+"The new panel layout will be activated on selection and destroy any "
+"customisations you might have made."
+msgstr ""
+
+#: ../mate-tweak:487
+msgid "Text below items"
+msgstr "Teksts apakšā"
+
+#: ../mate-tweak:488
+msgid "Text beside items"
+msgstr "Teksts blakus"
+
+#: ../mate-tweak:489
+msgid "Icons only"
+msgstr "Tikai ikonas"
+
+#: ../mate-tweak:490
+msgid "Text only"
+msgstr "Tikai teksts"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminālis"
+
+#~ msgid "Use system font in titlebar"
+#~ msgstr "Lietot sistēmas fontu tituljoslā"
+
+#~ msgid "Show fortune cookies"
+#~ msgstr "rādīt \"laimes\" cepumus"
+
+#~ msgid "Mac style (Left)"
+#~ msgstr "Mac stils (kreisā puse)"
+
+#~ msgid "Desktop Settings"
+#~ msgstr "Darbvirsmas iestatījumi"
+
+#~ msgid "Fine-tune desktop settings"
+#~ msgstr "Pielāgot darbvirsmas iestatījumus"
+
+#~ msgid "Desktop Items"
+#~ msgstr "Darbvirsmas vienumi"
+
+#~ msgid "Gnome Settings"
+#~ msgstr "Gnome uzstādījumi"
+
+#~ msgid "Fine-tune Gnome settings"
+#~ msgstr "Sīkāki Gnome uzstādījumi"
+
+#~ msgid "Desktop Configuration Tool"
+#~ msgstr "Darbvirsmas konfigurācijas rīks"
