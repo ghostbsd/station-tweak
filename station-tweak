@@ -30,10 +30,10 @@ import string
 from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
 from gi.repository import Gio
 
-__VERSION__="3.4.9"
+__VERSION__="1.0.0"
 
 # i18n
-gettext.install("mate-tweak", "/usr/local/share/locale")
+gettext.install("station-tweak", "/usr/local/share/locale")
 
 class SidePage:
     def __init__(self, notebook_index, name, icon):
@@ -41,7 +41,7 @@ class SidePage:
         self.name = name
         self.icon = icon
 
-class MateTweak:
+class StationTweak:
 
     def set_string(self, schema, key, value):
         settings = Gio.Settings.new(schema)
@@ -157,7 +157,7 @@ class MateTweak:
         # If the system autostart is missing create a user autostart.
         if not os.path.exists('/usr/local/etc/xdg/autostart/mate-volume-control-applet.desktop'):
             self.mkdir_p(os.path.expanduser('~/.config/autostart/'))
-            shutil.copy2('/usr/local/share/mate-tweak/mate-volume-control-applet.desktop', os.path.expanduser('~/.config/autostart/'))
+            shutil.copy2('/usr/local/share/station-tweak/mate-volume-control-applet.desktop', os.path.expanduser('~/.config/autostart/'))
 
     def disable_mate_volume_applet(self):
         devnull = open(os.devnull, 'wb')
@@ -167,7 +167,7 @@ class MateTweak:
         if os.path.exists(os.path.expanduser('~/.config/autostart/') + 'mate-volume-control-applet.desktop'):
             os.remove(os.path.expanduser('~/.config/autostart/') + 'mate-volume-control-applet.desktop')
         if os.path.exists('/usr/local/etc/xdg/autostart/mate-volume-control-applet.desktop'):
-            subprocess.Popen(['pkexec', '/usr/local/lib/mate-tweak/disable-mate-volume-applet'], stdout=devnull, stderr=devnull)
+            subprocess.Popen(['pkexec', '/usr/local/lib/station-tweak/disable-mate-volume-applet'], stdout=devnull, stderr=devnull)
         devnull.close()
 
     def replace_panel_layout(self, panel_layout):
@@ -273,7 +273,7 @@ class MateTweak:
     def __init__(self):
         # Load the Glade UI file
         self.builder = Gtk.Builder()
-        self.builder.add_from_file('/usr/local/lib/mate-tweak/mate-tweak.ui')
+        self.builder.add_from_file('/usr/local/lib/station-tweak/station-tweak.ui')
 
         self.window = self.builder.get_object( "main_window" )
         self.builder.get_object("main_window").connect("destroy", Gtk.main_quit)
@@ -355,7 +355,7 @@ class MateTweak:
         self.builder.get_object("side_view").connect("selection_changed", self.side_view_nav )
 
         # set up larger components.
-        self.builder.get_object("main_window").set_title("MATE Tweak")
+        self.builder.get_object("main_window").set_title("Station Tweak")
         self.builder.get_object("main_window").connect("destroy", Gtk.main_quit)
 
         # i18n
@@ -535,5 +535,5 @@ class MateTweak:
 
 
 if __name__ == "__main__":
-    MateTweak()
+    StationTweak()
     Gtk.main()

@@ -34,7 +34,7 @@ import DistUtilsExtra.command.clean_i18n
 
 # silence pyflakes, __VERSION__ is properly assigned below...
 __VERSION__ = '0.0.0.0'
-for line in file('mate-tweak').readlines():
+for line in file('station-tweak').readlines():
     if (line.startswith('__VERSION__')):
         exec(line.strip())
 PROGRAM_VERSION = __VERSION__
@@ -50,10 +50,10 @@ def datafilelist(installbase, sourcebase):
 
 data_files = [
     ('{prefix}/share/man/man1'.format(prefix=sys.prefix), glob('data/*.1')),
-    ('{prefix}/share/applications'.format(prefix=sys.prefix), ['data/mate-tweak.desktop',]),
-    ('{prefix}/share/mate-tweak'.format(prefix=sys.prefix), ['data/mate-volume-control-applet.desktop',]),
-    ('{prefix}/share/polkit/actions'.format(prefix=sys.prefix), ['data/org.mate.mate-tweak.policy',]),
-    ('{prefix}/lib/mate-tweak'.format(prefix=sys.prefix), ['data/mate-tweak.ui', 'util/disable-mate-volume-applet', 'util/mate-panel-backup']),
+    ('{prefix}/share/applications'.format(prefix=sys.prefix), ['data/station-tweak.desktop',]),
+    ('{prefix}/share/station-tweak'.format(prefix=sys.prefix), ['data/mate-volume-control-applet.desktop',]),
+    ('{prefix}/share/polkit/actions'.format(prefix=sys.prefix), ['data/org.mate.station-tweak.policy',]),
+    ('{prefix}/lib/station-tweak'.format(prefix=sys.prefix), ['data/station-tweak.ui', 'util/disable-mate-volume-applet', 'util/mate-panel-backup']),
 ]
 data_files.extend(datafilelist('{prefix}/share/locale'.format(prefix=sys.prefix), 'build/mo'))
 
@@ -64,15 +64,15 @@ cmdclass ={
 }
 
 setup(
-    name = "mate-tweak",
+    name = "station-tweak",
     version = PROGRAM_VERSION,
-    description = "MATE Tweak is a tiny toolset to fine-tune the MATE desktop environment",
+    description = "Station Tweak is a toolset to fine-tune the MATE desktop environment",
     license = 'GPLv2+',
-    author = 'Martin Wimpress',
-    url = 'https://bitbucket.org/ubuntu-mate/mate-tweak/',
+    author = 'Eric Turgeon',
+    url = 'https://github/GhostBSD/station-tweak/',
     package_dir = {'': '.'},
     data_files = data_files,
     install_requires = [ 'setuptools', ],
-    scripts = ['mate-tweak'],
+    scripts = ['station-tweak'],
     cmdclass = cmdclass,
 )

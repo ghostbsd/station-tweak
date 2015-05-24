@@ -18,216 +18,216 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../mate-tweak:279
+#: ../sation-tweak:279
 msgid "Desktop"
 msgstr ""
 
-#: ../mate-tweak:280
+#: ../sation-tweak:280
 msgid "Windows"
 msgstr ""
 
-#: ../mate-tweak:281
+#: ../sation-tweak:281
 msgid "Interface"
 msgstr ""
 
-#: ../mate-tweak:328
+#: ../sation-tweak:328
 msgid "Desktop icons"
 msgstr ""
 
-#: ../mate-tweak:329
+#: ../sation-tweak:329
 msgid "Performance"
 msgstr ""
 
-#: ../mate-tweak:330
+#: ../sation-tweak:330
 msgid "Appearance"
 msgstr ""
 
-#: ../mate-tweak:331
+#: ../sation-tweak:331
 msgid "Icons"
 msgstr ""
 
-#: ../mate-tweak:332
+#: ../sation-tweak:332
 msgid "Context menus"
 msgstr ""
 
-#: ../mate-tweak:333
+#: ../sation-tweak:333
 msgid "Toolbars"
 msgstr ""
 
-#: ../mate-tweak:334
+#: ../sation-tweak:334
 msgid "Window Manager"
 msgstr ""
 
-#: ../mate-tweak:336
+#: ../sation-tweak:336
 msgid "Select the items you want to see on the desktop:"
 msgstr ""
 
-#: ../mate-tweak:338
+#: ../sation-tweak:338
 msgid "Computer"
 msgstr ""
 
-#: ../mate-tweak:339
+#: ../sation-tweak:339
 msgid "Home"
 msgstr ""
 
-#: ../mate-tweak:340
+#: ../sation-tweak:340
 msgid "Network"
 msgstr ""
 
-#: ../mate-tweak:341
+#: ../sation-tweak:341
 msgid "Trash"
 msgstr ""
 
-#: ../mate-tweak:342
+#: ../sation-tweak:342
 msgid "Mounted Volumes"
 msgstr ""
 
-#: ../mate-tweak:344
+#: ../sation-tweak:344
 msgid "Don't show window content while dragging them"
 msgstr ""
 
-#: ../mate-tweak:345
+#: ../sation-tweak:345
 msgid "Use compositing"
 msgstr ""
 
-#: ../mate-tweak:347
+#: ../sation-tweak:347
 msgid "Buttons layout:"
 msgstr ""
 
-#: ../mate-tweak:348
+#: ../sation-tweak:348
 msgid "Window manager:"
 msgstr ""
 
-#: ../mate-tweak:350
+#: ../sation-tweak:350
 msgid "Show icons on menus"
 msgstr ""
 
-#: ../mate-tweak:351
+#: ../sation-tweak:351
 msgid "Show icons on buttons"
 msgstr ""
 
-#: ../mate-tweak:352
+#: ../sation-tweak:352
 msgid "Show Input Methods menu in context menus"
 msgstr ""
 
-#: ../mate-tweak:353
+#: ../sation-tweak:353
 msgid "Show Unicode Control Character menu in context menus"
 msgstr ""
 
-#: ../mate-tweak:355
+#: ../sation-tweak:355
 msgid "Buttons labels:"
 msgstr ""
 
-#: ../mate-tweak:356
+#: ../sation-tweak:356
 msgid "Icon size:"
 msgstr ""
 
-#: ../mate-tweak:376
+#: ../sation-tweak:376
 msgid "Small"
 msgstr ""
 
-#: ../mate-tweak:377
+#: ../sation-tweak:377
 msgid "Large"
 msgstr ""
 
-#: ../mate-tweak:383
+#: ../sation-tweak:383
 msgid "Traditional (Right)"
 msgstr ""
 
-#: ../mate-tweak:384
+#: ../sation-tweak:384
 msgid "Contemporary (Left)"
 msgstr ""
 
-#: ../mate-tweak:390
+#: ../sation-tweak:390
 msgid "Marco (Simple desktop effects)"
 msgstr ""
 
-#: ../mate-tweak:392
+#: ../sation-tweak:392
 msgid "Compiz (Advanced GPU accelerated desktop effects)"
 msgstr ""
 
-#: ../mate-tweak:394
+#: ../sation-tweak:394
 msgid "The new window manager will be activated upon selection."
 msgstr ""
 
-#: ../mate-tweak:422
+#: ../sation-tweak:422
 msgid "MATE Desktop"
 msgstr ""
 
-#: ../mate-tweak:425
-msgid "Ubuntu MATE"
+#: ../sation-tweak:425
+msgid "GhostBSD"
 msgstr ""
 
-#: ../mate-tweak:429
-msgid "Ubuntu MATE with MATE Menu"
+#: ../sation-tweak:429
+msgid "GhostBSD with MATE Menu"
 msgstr ""
 
-#: ../mate-tweak:433
-msgid "Ubuntu MATE with Indicators"
+#: ../sation-tweak:433
+msgid "GhostBSD with Indicators"
 msgstr ""
 
-#: ../mate-tweak:438
-msgid "Ubuntu MATE with Indicators and MATE Menu"
+#: ../sation-tweak:438
+msgid "GhostBSD with Indicators and MATE Menu"
 msgstr ""
 
-#: ../mate-tweak:441
+#: ../sation-tweak:441
 msgid "Redmond"
 msgstr ""
 
-#: ../mate-tweak:445
+#: ../sation-tweak:445
 msgid "Redmond with MATE Menu"
 msgstr ""
 
-#: ../mate-tweak:449
+#: ../sation-tweak:449
 msgid "Redmond with Indicators"
 msgstr ""
 
-#: ../mate-tweak:454
+#: ../sation-tweak:454
 msgid "Redmond with Indicators and MATE Menu"
 msgstr ""
 
-#: ../mate-tweak:458
+#: ../sation-tweak:458
 msgid "Eleven"
 msgstr ""
 
-#: ../mate-tweak:462
+#: ../sation-tweak:462
 msgid "Eleven with MATE Menu"
 msgstr ""
 
-#: ../mate-tweak:466
+#: ../sation-tweak:466
 msgid "Eleven with Indicators"
 msgstr ""
 
-#: ../mate-tweak:471
+#: ../sation-tweak:471
 msgid "Eleven with Indicators and MATE Menu"
 msgstr ""
 
-#: ../mate-tweak:475
+#: ../sation-tweak:475
 msgid "Linux Mint"
 msgstr ""
 
-#: ../mate-tweak:479
+#: ../sation-tweak:479
 msgid "openSUSE"
 msgstr ""
 
-#: ../mate-tweak:482
+#: ../sation-tweak:482
 msgid ""
 "The new panel layout will be activated on selection and destroy any "
 "customisations you might have made."
 msgstr ""
 
-#: ../mate-tweak:487
+#: ../sation-tweak:487
 msgid "Text below items"
 msgstr ""
 
-#: ../mate-tweak:488
+#: ../sation-tweak:488
 msgid "Text beside items"
 msgstr ""
 
-#: ../mate-tweak:489
+#: ../sation-tweak:489
 msgid "Icons only"
 msgstr ""
 
-#: ../mate-tweak:490
+#: ../sation-tweak:490
 msgid "Text only"
 msgstr ""

@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=MATE Tweak
-Exec=mate-tweak
+Name=Station Tweak
+Exec=station-tweak
 Icon=user-desktop
 Terminal=false
 Type=Application

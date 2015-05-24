@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-23 23:44-0300\n"
+"POT-Creation-Date: 2015-05-24 02:29-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,248 +17,248 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../mate-tweak:282
+#: ../station-tweak:282
 msgid "Desktop"
 msgstr ""
 
-#: ../mate-tweak:283
+#: ../station-tweak:283
 msgid "Windows"
 msgstr ""
 
-#: ../mate-tweak:284
+#: ../station-tweak:284
 msgid "Interface"
 msgstr ""
 
-#: ../mate-tweak:362
+#: ../station-tweak:362
 msgid "Desktop icons"
 msgstr ""
 
-#: ../mate-tweak:363
+#: ../station-tweak:363
 msgid "Performance"
 msgstr ""
 
-#: ../mate-tweak:364
+#: ../station-tweak:364
 msgid "Maximus"
 msgstr ""
 
-#: ../mate-tweak:365
+#: ../station-tweak:365
 msgid "Appearance"
 msgstr ""
 
-#: ../mate-tweak:366
+#: ../station-tweak:366
 msgid "Icons"
 msgstr ""
 
-#: ../mate-tweak:367
+#: ../station-tweak:367
 msgid "Context menus"
 msgstr ""
 
-#: ../mate-tweak:368
+#: ../station-tweak:368
 msgid "Toolbars"
 msgstr ""
 
-#: ../mate-tweak:369
+#: ../station-tweak:369
 msgid "Window Manager"
 msgstr ""
 
-#: ../mate-tweak:371
+#: ../station-tweak:371
 msgid "Select the items you want to see on the desktop:"
 msgstr ""
 
-#: ../mate-tweak:373
+#: ../station-tweak:373
 msgid "Computer"
 msgstr ""
 
-#: ../mate-tweak:374
+#: ../station-tweak:374
 msgid "Home"
 msgstr ""
 
-#: ../mate-tweak:375
+#: ../station-tweak:375
 msgid "Network"
 msgstr ""
 
-#: ../mate-tweak:376
+#: ../station-tweak:376
 msgid "Trash"
 msgstr ""
 
-#: ../mate-tweak:377
+#: ../station-tweak:377
 msgid "Mounted Volumes"
 msgstr ""
 
-#: ../mate-tweak:379
+#: ../station-tweak:379
 msgid "Don't show window content while dragging them"
 msgstr ""
 
-#: ../mate-tweak:380
+#: ../station-tweak:380
 msgid "Use compositing"
 msgstr ""
 
-#: ../mate-tweak:382
+#: ../station-tweak:382
 msgid "Undecorate maximized windows"
 msgstr ""
 
-#: ../mate-tweak:383
+#: ../station-tweak:383
 msgid "Do not auto-maximize new windows"
 msgstr ""
 
-#: ../mate-tweak:385
+#: ../station-tweak:385
 msgid "Buttons layout:"
 msgstr ""
 
-#: ../mate-tweak:386
+#: ../station-tweak:386
 msgid "Window manager:"
 msgstr ""
 
-#: ../mate-tweak:388
+#: ../station-tweak:388
 msgid "Show icons on menus"
 msgstr ""
 
-#: ../mate-tweak:389
+#: ../station-tweak:389
 msgid "Show icons on buttons"
 msgstr ""
 
-#: ../mate-tweak:390
+#: ../station-tweak:390
 msgid "Show Input Methods menu in context menus"
 msgstr ""
 
-#: ../mate-tweak:391
+#: ../station-tweak:391
 msgid "Show Unicode Control Character menu in context menus"
 msgstr ""
 
-#: ../mate-tweak:393
+#: ../station-tweak:393
 msgid "Buttons labels:"
 msgstr ""
 
-#: ../mate-tweak:394
+#: ../station-tweak:394
 msgid "Icon size:"
 msgstr ""
 
-#: ../mate-tweak:416
+#: ../station-tweak:416
 msgid "Small"
 msgstr ""
 
-#: ../mate-tweak:417
+#: ../station-tweak:417
 msgid "Large"
 msgstr ""
 
-#: ../mate-tweak:423
+#: ../station-tweak:423
 msgid "Traditional (Right)"
 msgstr ""
 
-#: ../mate-tweak:424
+#: ../station-tweak:424
 msgid "Contemporary (Left)"
 msgstr ""
 
-#: ../mate-tweak:430
+#: ../station-tweak:430
 msgid "Marco (Simple desktop effects)"
 msgstr ""
 
-#: ../mate-tweak:432
+#: ../station-tweak:432
 msgid "Compiz (Advanced GPU accelerated desktop effects)"
 msgstr ""
 
-#: ../mate-tweak:434
+#: ../station-tweak:434
 msgid "The new window manager will be activated upon selection."
 msgstr ""
 
-#: ../mate-tweak:443
+#: ../station-tweak:443
 msgid "Custom layout for: "
 msgstr ""
 
-#: ../mate-tweak:446
+#: ../station-tweak:446
 msgid "GNOME2"
 msgstr ""
 
-#: ../mate-tweak:449
+#: ../station-tweak:449
 msgid "Ubuntu MATE"
 msgstr ""
 
-#: ../mate-tweak:453
+#: ../station-tweak:453
 msgid "Ubuntu MATE with MATE Menu"
 msgstr ""
 
-#: ../mate-tweak:457
+#: ../station-tweak:457
 msgid "Ubuntu MATE with Indicators"
 msgstr ""
 
-#: ../mate-tweak:462
+#: ../station-tweak:462
 msgid "Ubuntu MATE with Indicators and MATE Menu"
 msgstr ""
 
-#: ../mate-tweak:465
+#: ../station-tweak:465
 msgid "Redmond"
 msgstr ""
 
-#: ../mate-tweak:469
+#: ../station-tweak:469
 msgid "Redmond with MATE Menu"
 msgstr ""
 
-#: ../mate-tweak:473
+#: ../station-tweak:473
 msgid "Redmond with Indicators"
 msgstr ""
 
-#: ../mate-tweak:478
+#: ../station-tweak:478
 msgid "Redmond with Indicators and MATE Menu"
 msgstr ""
 
-#: ../mate-tweak:482
+#: ../station-tweak:482
 msgid "Netbook"
 msgstr ""
 
-#: ../mate-tweak:486
+#: ../station-tweak:486
 msgid "Netbook with MATE Menu"
 msgstr ""
 
-#: ../mate-tweak:490
+#: ../station-tweak:490
 msgid "Netbook with Indicators"
 msgstr ""
 
-#: ../mate-tweak:495
+#: ../station-tweak:495
 msgid "Netbook with Indicators and MATE Menu"
 msgstr ""
 
-#: ../mate-tweak:499
+#: ../station-tweak:499
 msgid "Cupertino"
 msgstr ""
 
-#: ../mate-tweak:503
+#: ../station-tweak:503
 msgid "Cupertino with MATE Menu"
 msgstr ""
 
-#: ../mate-tweak:507
+#: ../station-tweak:507
 msgid "Cupertino with Indicators"
 msgstr ""
 
-#: ../mate-tweak:512
+#: ../station-tweak:512
 msgid "Cupertino with Indicators and MATE Menu"
 msgstr ""
 
-#: ../mate-tweak:516
+#: ../station-tweak:516
 msgid "Linux Mint"
 msgstr ""
 
-#: ../mate-tweak:520
+#: ../station-tweak:520
 msgid "openSUSE"
 msgstr ""
 
-#: ../mate-tweak:523
+#: ../station-tweak:523
 msgid ""
 "The new panel layout will be activated on selection and destroy any "
 "customisations you might have made."
 msgstr ""
 
-#: ../mate-tweak:528
+#: ../station-tweak:528
 msgid "Text below items"
 msgstr ""
 
-#: ../mate-tweak:529
+#: ../station-tweak:529
 msgid "Text beside items"
 msgstr ""
 
-#: ../mate-tweak:530
+#: ../station-tweak:530
 msgid "Icons only"
 msgstr ""
 
-#: ../mate-tweak:531
+#: ../station-tweak:531
 msgid "Text only"
 msgstr ""
