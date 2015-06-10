@@ -2,7 +2,7 @@
 
 # Copyright (C) 2007-2014 by Clement Lefebvre <root@linuxmint.com>
 # Copyright (C) 2015 Martin Wimpress <code@ubuntu-mate.org>
-# 
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -183,10 +183,10 @@ class StationTweak:
         # Indicator enabled layouts auto-load the sound-indicator.
         # Therefore, make mate-volume-control-applet is killed or
         # started accordingly.
-        if 'indicators' in panel_layout:
-            self.disable_mate_volume_applet()
-        else:
-            self.enable_mate_volume_applet()
+        #if 'indicators' in panel_layout:
+        #    self.disable_mate_volume_applet()
+        #else:
+        #    self.enable_mate_volume_applet()
 
         # Enable/disable the appropriate dock if one of the dock ready
         # panel layouts is selected.
@@ -196,7 +196,7 @@ class StationTweak:
         elif self.find_on_path('plank'):
             dock = 'plank'
 
-        if panel_layout.startswith('eleven') and dock is not None:
+        if panel_layout.startswith('element') and dock is not None:
             if dock is 'docky':
                 self.disable_dock('plank')
             elif dock is 'plank':
@@ -443,23 +443,13 @@ class StationTweak:
             panels.append([_("Custom layout for: " + current_user), current_user])
 
         if self.panel_layout_exists('default'):
-            panels.append([_("GNOME2"), "default"])
+            panels.append([_("Mate Desktop"), "default"])
 
-        if self.panel_layout_exists('ubuntu-mate'):
-            panels.append([_("Ubuntu MATE"), "ubuntu-mate"])
+        if self.panel_layout_exists('classic'):
+            panels.append([_("Classic"), "classic"])
 
-        if self.panel_layout_exists('ubuntu-mate-fresh') \
-            and mate_menu_available:
-            panels.append([_("Ubuntu MATE with MATE Menu"), "ubuntu-mate-fresh"])
-
-        if self.panel_layout_exists('ubuntu-mate-indicators') \
-            and indicators_available:
-            panels.append([_("Ubuntu MATE with Indicators"), "ubuntu-mate-indicators"])
-
-        if self.panel_layout_exists('ubuntu-mate-indicators-fresh') \
-            and indicators_available \
-            and mate_menu_available:
-            panels.append([_("Ubuntu MATE with Indicators and MATE Menu"), "ubuntu-mate-indicators-fresh"])
+        if self.panel_layout_exists('purity'):
+            panels.append([_("Purity"), "purity"])
 
         if self.panel_layout_exists('redmond'):
             panels.append([_("Redmond"), "redmond"])
@@ -477,47 +467,50 @@ class StationTweak:
             and mate_menu_available:
             panels.append([_("Redmond with Indicators and MATE Menu"), "redmond-indicators-fresh"])
 
-        if maximus_available:
-            if self.panel_layout_exists('netbook'):
-                panels.append([_("Netbook"), "netbook"])
+        # if maximus_available:
+        #     if self.panel_layout_exists('netbook'):
+        #         panels.append([_("Netbook"), "netbook"])
 
-            if self.panel_layout_exists('netbook-fresh') \
-                and mate_menu_available:
-                panels.append([_("Netbook with MATE Menu"), "netbook-fresh"])
+        #     if self.panel_layout_exists('netbook-fresh') \
+        #         and mate_menu_available:
+        #         panels.append([_("Netbook with MATE Menu"), "netbook-fresh"])
 
-            if self.panel_layout_exists('netbook-indicators') and \
-               indicators_available:
-                panels.append([_("Netbook with Indicators"), "netbook-indicators"])
+        #     if self.panel_layout_exists('netbook-indicators') and \
+        #        indicators_available:
+        #         panels.append([_("Netbook with Indicators"), "netbook-indicators"])
 
-            if self.panel_layout_exists('netbook-indicators-fresh') and \
-               indicators_available and \
-               mate_menu_available:
-                panels.append([_("Netbook with Indicators and MATE Menu"), "netbook-indicators-fresh"])
+        #     if self.panel_layout_exists('netbook-indicators-fresh') and \
+        #        indicators_available and \
+        #        mate_menu_available:
+        #         panels.append([_("Netbook with Indicators and MATE Menu"), "netbook-indicators-fresh"])
 
         if dock:
-            if self.panel_layout_exists('eleven'):
-                panels.append([_("Cupertino"), "eleven"])
+            if self.panel_layout_exists('element'):
+                panels.append([_("Element"), "element"])
 
-            if self.panel_layout_exists('eleven-fresh') and \
-               mate_menu_available:
-                panels.append([_("Cupertino with MATE Menu"), "eleven-fresh"])
+            if self.panel_layout_exists('creame'):
+                panels.append([_("creame"), "creame"])
 
-            if self.panel_layout_exists('eleven-indicators') and \
-               indicators_available:
-                panels.append([_("Cupertino with Indicators"), "eleven-indicators"])
+            # if self.panel_layout_exists('eleven-fresh') and \
+            #    mate_menu_available:
+            #     panels.append([_("Cupertino with MATE Menu"), "eleven-fresh"])
 
-            if self.panel_layout_exists('eleven-indicators-fresh') and \
-                indicators_available and \
-                mate_menu_available:
-                panels.append([_("Cupertino with Indicators and MATE Menu"), "eleven-indicators-fresh"])
+            # if self.panel_layout_exists('eleven-indicators') and \
+            #    indicators_available:
+            #     panels.append([_("Cupertino with Indicators"), "eleven-indicators"])
 
-        if self.panel_layout_exists('linuxmint') and \
-           mint_menu_available:
-            panels.append([_("Linux Mint"), "linuxmint"])
+            # if self.panel_layout_exists('eleven-indicators-fresh') and \
+            #     indicators_available and \
+            #     mate_menu_available:
+            #     panels.append([_("Cupertino with Indicators and MATE Menu"), "eleven-indicators-fresh"])
 
-        if self.panel_layout_exists('opensuse') and \
-           gnome_menu_available:
-            panels.append([_("openSUSE"), "opensuse"])
+        # if self.panel_layout_exists('linuxmint') and \
+        #    mint_menu_available:
+        #     panels.append([_("Linux Mint"), "linuxmint"])
+
+        # if self.panel_layout_exists('opensuse') and \
+        #    gnome_menu_available:
+        #     panels.append([_("openSUSE"), "opensuse"])
 
         self.builder.get_object("combobox_panels").set_model(panels)
         self.builder.get_object("combobox_panels").set_tooltip_text(_("The new panel layout will be activated on selection and destroy any customisations you might have made."))

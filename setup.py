@@ -53,6 +53,7 @@ data_files = [
     ('{prefix}/share/applications'.format(prefix=sys.prefix), ['data/station-tweak.desktop',]),
     ('{prefix}/share/station-tweak'.format(prefix=sys.prefix), ['data/mate-volume-control-applet.desktop',]),
     ('{prefix}/share/polkit/actions'.format(prefix=sys.prefix), ['data/org.mate.station-tweak.policy',]),
+    ('{prefix}/share/mate-panel/layouts'.format(prefix=sys.prefix), ['data/classic.layout', 'data/element.layout', 'data/purity.layout',]),
     ('{prefix}/lib/station-tweak'.format(prefix=sys.prefix), ['data/station-tweak.ui', 'util/disable-mate-volume-applet', 'util/mate-panel-backup']),
 ]
 data_files.extend(datafilelist('{prefix}/share/locale'.format(prefix=sys.prefix), 'build/mo'))

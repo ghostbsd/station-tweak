@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 02:29-0300\n"
+"POT-Creation-Date: 2015-05-24 16:37-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -166,99 +166,95 @@ msgid "Custom layout for: "
 msgstr ""
 
 #: ../station-tweak:446
-msgid "GNOME2"
+msgid "Default"
 msgstr ""
 
 #: ../station-tweak:449
-msgid "Ubuntu MATE"
+msgid "Classic"
 msgstr ""
 
-#: ../station-tweak:453
-msgid "Ubuntu MATE with MATE Menu"
+#: ../station-tweak:452
+msgid "Purity"
 msgstr ""
 
-#: ../station-tweak:457
-msgid "Ubuntu MATE with Indicators"
-msgstr ""
-
-#: ../station-tweak:462
-msgid "Ubuntu MATE with Indicators and MATE Menu"
-msgstr ""
-
-#: ../station-tweak:465
+#: ../station-tweak:455
 msgid "Redmond"
 msgstr ""
 
-#: ../station-tweak:469
+#: ../station-tweak:459
 msgid "Redmond with MATE Menu"
 msgstr ""
 
-#: ../station-tweak:473
+#: ../station-tweak:463
 msgid "Redmond with Indicators"
 msgstr ""
 
-#: ../station-tweak:478
+#: ../station-tweak:468
 msgid "Redmond with Indicators and MATE Menu"
 msgstr ""
 
-#: ../station-tweak:482
+#: ../station-tweak:472
 msgid "Netbook"
 msgstr ""
 
-#: ../station-tweak:486
+#: ../station-tweak:476
 msgid "Netbook with MATE Menu"
 msgstr ""
 
-#: ../station-tweak:490
+#: ../station-tweak:480
 msgid "Netbook with Indicators"
 msgstr ""
 
-#: ../station-tweak:495
+#: ../station-tweak:485
 msgid "Netbook with Indicators and MATE Menu"
 msgstr ""
 
-#: ../station-tweak:499
-msgid "Cupertino"
+#: ../station-tweak:489
+msgid "Elemneet"
 msgstr ""
 
-#: ../station-tweak:503
+#: ../station-tweak:492
+msgid "creame"
+msgstr ""
+
+#: ../station-tweak:496
 msgid "Cupertino with MATE Menu"
 msgstr ""
 
-#: ../station-tweak:507
+#: ../station-tweak:500
 msgid "Cupertino with Indicators"
 msgstr ""
 
-#: ../station-tweak:512
+#: ../station-tweak:505
 msgid "Cupertino with Indicators and MATE Menu"
 msgstr ""
 
-#: ../station-tweak:516
+#: ../station-tweak:509
 msgid "Linux Mint"
 msgstr ""
 
-#: ../station-tweak:520
+#: ../station-tweak:513
 msgid "openSUSE"
 msgstr ""
 
-#: ../station-tweak:523
+#: ../station-tweak:516
 msgid ""
 "The new panel layout will be activated on selection and destroy any "
 "customisations you might have made."
 msgstr ""
 
-#: ../station-tweak:528
+#: ../station-tweak:521
 msgid "Text below items"
 msgstr ""
 
-#: ../station-tweak:529
+#: ../station-tweak:522
 msgid "Text beside items"
 msgstr ""
 
-#: ../station-tweak:530
+#: ../station-tweak:523
 msgid "Icons only"
 msgstr ""
 
-#: ../station-tweak:531
+#: ../station-tweak:524
 msgid "Text only"
 msgstr ""
