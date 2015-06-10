@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-24 16:37-0300\n"
+"POT-Creation-Date: 2015-06-10 19:56-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -166,7 +166,7 @@ msgid "Custom layout for: "
 msgstr ""
 
 #: ../station-tweak:446
-msgid "Default"
+msgid "Mate Desktop"
 msgstr ""
 
 #: ../station-tweak:449
@@ -193,48 +193,12 @@ msgstr ""
 msgid "Redmond with Indicators and MATE Menu"
 msgstr ""
 
-#: ../station-tweak:472
-msgid "Netbook"
-msgstr ""
-
-#: ../station-tweak:476
-msgid "Netbook with MATE Menu"
-msgstr ""
-
-#: ../station-tweak:480
-msgid "Netbook with Indicators"
-msgstr ""
-
-#: ../station-tweak:485
-msgid "Netbook with Indicators and MATE Menu"
-msgstr ""
-
 #: ../station-tweak:489
-msgid "Elemneet"
+msgid "Element"
 msgstr ""
 
 #: ../station-tweak:492
 msgid "creame"
-msgstr ""
-
-#: ../station-tweak:496
-msgid "Cupertino with MATE Menu"
-msgstr ""
-
-#: ../station-tweak:500
-msgid "Cupertino with Indicators"
-msgstr ""
-
-#: ../station-tweak:505
-msgid "Cupertino with Indicators and MATE Menu"
-msgstr ""
-
-#: ../station-tweak:509
-msgid "Linux Mint"
-msgstr ""
-
-#: ../station-tweak:513
-msgid "openSUSE"
 msgstr ""
 
 #: ../station-tweak:516
