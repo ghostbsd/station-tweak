@@ -32,14 +32,6 @@ position=10
 panel-right-stick=true
 locked=true
 
-[Object mixer]
-object-type=applet
-applet-iid=MixerAppletFactory::MixerApplet
-toplevel-id=top
-panel-right-stick=true
-position=20
-locked=true
-
 [Object show-desktop]
 object-type=applet
 applet-iid=WnckletFactory::ShowDesktopApplet

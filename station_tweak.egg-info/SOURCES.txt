@@ -1,7 +1,0 @@
-setup.py
-station-tweak
-station_tweak.egg-info/PKG-INFO
-station_tweak.egg-info/SOURCES.txt
-station_tweak.egg-info/dependency_links.txt
-station_tweak.egg-info/requires.txt
-station_tweak.egg-info/top_level.txt

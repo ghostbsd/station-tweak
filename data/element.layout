@@ -17,14 +17,6 @@ position=20
 panel-right-stick=true
 locked=true
 
-[Object mixer]
-object-type=applet
-applet-iid=MixerAppletFactory::MixerApplet
-toplevel-id=top
-panel-right-stick=true
-position=10
-locked=true
-
 [Object clock]
 object-type=applet
 applet-iid=ClockAppletFactory::ClockApplet
