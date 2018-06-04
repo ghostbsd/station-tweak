@@ -21,25 +21,25 @@
 import errno
 import gettext
 import getpass
-import gi
 import os
 import shutil
-import subprocess
-import string
+from subprocess import Popen, PIPE
 
-from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
+from gi.repository import Gtk, GdkPixbuf
 from gi.repository import Gio
 
-__VERSION__="1.0.0"
+__VERSION__ = "1.0.0"
 
 # i18n
 gettext.install("station-tweak", "/usr/local/share/locale")
+
 
 class SidePage:
     def __init__(self, notebook_index, name, icon):
         self.notebook_index = notebook_index
         self.name = name
         self.icon = icon
+
 
 class StationTweak:
 
@@ -77,8 +77,9 @@ class StationTweak:
                 if(conf == row[1]):
                     widget.set_active(index)
                     break
-                index = index +1
-            widget.connect("changed", lambda x: self.combo_fallback(schema, key, x))
+                index = index + 1
+            widget.connect("changed",
+                           lambda x: self.combo_fallback(schema, key, x))
 
     def find_on_path(self, command):
         """Is command on the executable search path?"""
@@ -96,40 +97,42 @@ class StationTweak:
     def mkdir_p(self, path):
         try:
             os.makedirs(path)
-        except OSError as exc: # Python >2.5
+        except OSError as exc:  # Python >2.5
             if exc.errno == errno.EEXIST and os.path.isdir(path):
                 pass
             else:
                 raise
 
     def get_current_wm(self):
-        process = subprocess.Popen(['wmctrl', '-m'], stdout=subprocess.PIPE)
+        process = Popen(['wmctrl', '-m'], stdout=PIPE)
         out, err = process.communicate()
         return out
 
     def replace_windowmanager(self, wm):
-        # Use this in python < 3.3. Python >= 3.3 has subprocess.DEVNULL
+        # Use this in python < 3.3. Python >= 3.3 has DEVNULL
         devnull = open(os.devnull, 'wb')
         if wm == 'compiz':
             # Make sure Metacity is uses the same theme as Marco. This ensures
             # gtk-window-decorator does not incorrectly change theme when
             # switching from Marco to Compiz.
             mate_theme = self.get_string('org.mate.interface', 'gtk-theme')
-            self.set_string('org.gnome.desktop.wm.preferences', 'theme', mate_theme)
+            self.set_string('org.gnome.desktop.wm.preferences', 'theme',
+                            mate_theme)
 
             # mate-panel needs to be replaced when switching to Compiz to avoid
             # rendering screw ups.
-            subprocess.Popen(['killall', 'mate-panel'], stdout=devnull, stderr=devnull)
-            subprocess.Popen([wm, '--replace', 'ccp'], stdout=devnull, stderr=devnull)
-            subprocess.Popen(['mate-panel', '--replace'], stdout=devnull, stderr=devnull)
+            Popen(['killall', 'mate-panel'], stdout=devnull, stderr=devnull)
+            Popen([wm, '--replace', 'ccp'], stdout=devnull, stderr=devnull)
+            Popen(['mate-panel', '--replace'], stdout=devnull, stderr=devnull)
         else:
-            subprocess.Popen([wm, '--replace'], stdout=devnull, stderr=devnull)
+            Popen([wm, '--replace'], stdout=devnull, stderr=devnull)
 
         devnull.close()
 
     def enable_dock(self, dock):
         self.mkdir_p(os.path.expanduser('~/.config/autostart/'))
-        shutil.copy2('/usr/local/share/applications/' + dock + '.desktop', os.path.expanduser('~/.config/autostart/'))
+        shutil.copy2('/usr/local/share/applications/' + dock + '.desktop',
+                     os.path.expanduser('~/.config/autostart/'))
 
         devnull = open(os.devnull, 'wb')
         # Docks require compositing
@@ -137,21 +140,16 @@ class StationTweak:
         if "Marco" in current_wm:
             settings = Gio.Settings.new('org.mate.Marco.general')
             settings.set_boolean('compositing-manager', True)
-            subprocess.Popen(['marco', '--replace'], stdout=devnull, stderr=devnull)
+            Popen(['marco', '--replace'], stdout=devnull, stderr=devnull)
 
-        subprocess.Popen([dock], stdout=devnull, stderr=devnull)
+        Popen([dock], stdout=devnull, stderr=devnull)
         devnull.close()
 
     def disable_dock(self, dock):
         if os.path.exists(os.path.expanduser('~/.config/autostart/') + dock + '.desktop'):
             os.remove(os.path.expanduser('~/.config/autostart/') + dock + '.desktop')
         devnull = open(os.devnull, 'wb')
-        subprocess.Popen(['killall', dock], stdout=devnull, stderr=devnull)
-        devnull.close()
-
-    def enable_mate_volume_applet(self):
-        devnull = open(os.devnull, 'wb')
-        subprocess.Popen(['mate-volume-control-applet'], stdout=devnull, stderr=devnull)
+        Popen(['killall', dock], stdout=devnull, stderr=devnull)
         devnull.close()
 
         # If the system autostart is missing create a user autostart.
@@ -159,52 +157,36 @@ class StationTweak:
             self.mkdir_p(os.path.expanduser('~/.config/autostart/'))
             shutil.copy2('/usr/local/share/station-tweak/mate-volume-control-applet.desktop', os.path.expanduser('~/.config/autostart/'))
 
-    def disable_mate_volume_applet(self):
-        devnull = open(os.devnull, 'wb')
-        subprocess.Popen(['killall', 'mate-volume-control-applet'], stdout=devnull, stderr=devnull)
-
         # If a system or user autostart exists, remove it.
         if os.path.exists(os.path.expanduser('~/.config/autostart/') + 'mate-volume-control-applet.desktop'):
             os.remove(os.path.expanduser('~/.config/autostart/') + 'mate-volume-control-applet.desktop')
         if os.path.exists('/usr/local/etc/xdg/autostart/mate-volume-control-applet.desktop'):
-            subprocess.Popen(['pkexec', '/usr/local/lib/station-tweak/disable-mate-volume-applet'], stdout=devnull, stderr=devnull)
+            Popen(['pkexec', '/usr/local/lib/station-tweak/disable-mate-volume-applet'], stdout=devnull, stderr=devnull)
         devnull.close()
 
     def replace_panel_layout(self, panel_layout):
-        # Use this in python < 3.3. Python >= 3.3 has subprocess.DEVNULL
+        # Use this in python < 3.3. Python >= 3.3 has DEVNULL
         devnull = open(os.devnull, 'wb')
-        subprocess.Popen(['killall', 'mate-panel'], stdout=devnull, stderr=devnull)
-        subprocess.Popen(['dconf', 'reset', '-f', '/org/mate/panel/objects/'], stdout=devnull, stderr=devnull)
-        subprocess.Popen(['dconf', 'reset', '-f', '/org/mate/panel/toplevels/'], stdout=devnull, stderr=devnull)
+        Popen(['killall', 'mate-panel'], stdout=devnull, stderr=devnull)
+        Popen(['dconf', 'reset', '-f', '/org/mate/panel/objects/'],
+              stdout=devnull, stderr=devnull)
+        Popen(['dconf', 'reset', '-f', '/org/mate/panel/toplevels/'],
+              stdout=devnull, stderr=devnull)
         os.system('mate-panel --layout ' + panel_layout + ' --reset')
-        subprocess.Popen(['mate-panel', '--replace'], stdout=devnull, stderr=devnull)
+        Popen(['mate-panel', '--replace'], stdout=devnull, stderr=devnull)
         devnull.close()
-
-        # Indicator enabled layouts auto-load the sound-indicator.
-        # Therefore, make mate-volume-control-applet is killed or
-        # started accordingly.
-        #if 'indicators' in panel_layout:
-        #    self.disable_mate_volume_applet()
-        #else:
-        #    self.enable_mate_volume_applet()
 
         # Enable/disable the appropriate dock if one of the dock ready
         # panel layouts is selected.
         dock = None
-        if self.find_on_path('docky'):
-            dock = 'docky'
-        elif self.find_on_path('plank'):
+        if self.find_on_path('plank'):
             dock = 'plank'
 
         if panel_layout.startswith('element') and dock is not None:
-            if dock is 'docky':
-                self.disable_dock('plank')
-            elif dock is 'plank':
-                self.disable_dock('docky')
-
+            self.enable_dock(dock)
+        if panel_layout.startswith('classy') and dock is not None:
             self.enable_dock(dock)
         else:
-            self.disable_dock('docky')
             self.disable_dock('plank')
 
     def panel_layout_exists(self, panel_layout):
@@ -214,7 +196,7 @@ class StationTweak:
 
     def compiz_capable(self):
         if self.find_on_path('compiz') and self.find_on_path('glxinfo'):
-            process = subprocess.Popen(['glxinfo'], stdout=subprocess.PIPE)
+            process = Popen(['glxinfo'], stdout=PIPE)
             out, err = process.communicate()
             software_rasterizer = out.count("Software Rasterizer")
             texture_from_pixmap = out.count("texture_from_pixmap")
@@ -261,7 +243,7 @@ class StationTweak:
         treePaths = param.get_selected_items()
         if (len(treePaths) > 0):
             treePath = treePaths[0]
-            index = int("%s" % treePath) #Hack to turn treePath into an int
+            index = int("%s" % treePath)  # Hack to turn treePath into an int
             target = self.sidePages[index].notebook_index
             self.builder.get_object("notebook1").set_current_page(target)
 
@@ -275,7 +257,7 @@ class StationTweak:
         self.builder = Gtk.Builder()
         self.builder.add_from_file('/usr/local/lib/station-tweak/station-tweak.ui')
 
-        self.window = self.builder.get_object( "main_window" )
+        self.window = self.builder.get_object("main_window")
         self.builder.get_object("main_window").connect("destroy", Gtk.main_quit)
         self.builder.get_object("button_save_panels").connect("clicked", self.save_panels)
 
@@ -303,21 +285,13 @@ class StationTweak:
         if os.path.exists('/usr/local/lib/mate-menu/mate-menu.py'):
             mate_menu_available = True
 
-        mint_menu_available = False
-        if os.path.exists('/usr/local/lib/linuxmint/mintMenu/mintMenu.py'):
-            mint_menu_available = True
-
-        gnome_menu_available = False
-        if os.path.exists('/usr/local/lib/gnome-main-menu/main-menu'):
-            gnome_menu_available = True
-
         maximus_available = False
         if os.path.exists('/usr/local/bin/mate-maximus') and \
            os.path.exists('/usr/local/lib/mate-netbook/mate-window-picker-applet'):
             maximus_available = True
 
         dock = False
-        if os.path.exists('/usr/local/bin/docky') or os.path.exists('/usr/local/bin/plank'):
+        if os.path.exists('/usr/local/bin/plank'):
             dock = True
         print dock
         # Do not show Marco configuration options because Marco is not
@@ -330,7 +304,8 @@ class StationTweak:
 
         if marco_mode or compiz_mode:
             # Show window manager configuration
-            self.sidePages = [side_desktop_options, side_interface, side_windows]
+            self.sidePages = [side_desktop_options, side_interface,
+                              side_windows]
         else:
             # Do not show window manager configuration because the
             # currently running window manager is unknown.
@@ -445,72 +420,22 @@ class StationTweak:
         if self.panel_layout_exists('default'):
             panels.append([_("Mate Desktop"), "default"])
 
-        if self.panel_layout_exists('classic'):
-            panels.append([_("Classic"), "classic"])
+        if self.panel_layout_exists('classy'):
+            panels.append([_("Classy"), "classy"])
+
+        if self.panel_layout_exists('windowy'):
+            panels.append([_("Windowy"), "windowy"])
 
         if self.panel_layout_exists('purity'):
             panels.append([_("Purity"), "purity"])
 
-        if self.panel_layout_exists('redmond'):
-            panels.append([_("Redmond"), "redmond"])
 
-        if self.panel_layout_exists('redmond-fresh') \
-            and mate_menu_available:
-            panels.append([_("Redmond with MATE Menu"), "redmond-fresh"])
-
-        if self.panel_layout_exists('redmond-indicators') \
-            and indicators_available:
-            panels.append([_("Redmond with Indicators"), "redmond-indicators"])
-
-        if self.panel_layout_exists('redmond-indicators-fresh') \
-            and indicators_available \
-            and mate_menu_available:
-            panels.append([_("Redmond with Indicators and MATE Menu"), "redmond-indicators-fresh"])
-
-        # if maximus_available:
-        #     if self.panel_layout_exists('netbook'):
-        #         panels.append([_("Netbook"), "netbook"])
-
-        #     if self.panel_layout_exists('netbook-fresh') \
-        #         and mate_menu_available:
-        #         panels.append([_("Netbook with MATE Menu"), "netbook-fresh"])
-
-        #     if self.panel_layout_exists('netbook-indicators') and \
-        #        indicators_available:
-        #         panels.append([_("Netbook with Indicators"), "netbook-indicators"])
-
-        #     if self.panel_layout_exists('netbook-indicators-fresh') and \
-        #        indicators_available and \
-        #        mate_menu_available:
-        #         panels.append([_("Netbook with Indicators and MATE Menu"), "netbook-indicators-fresh"])
+        if self.panel_layout_exists('netbook'):
+            panels.append([_("Netbook"), "netbook"])
 
         if dock:
             if self.panel_layout_exists('element'):
                 panels.append([_("Element"), "element"])
-
-            if self.panel_layout_exists('creame'):
-                panels.append([_("creame"), "creame"])
-
-            # if self.panel_layout_exists('eleven-fresh') and \
-            #    mate_menu_available:
-            #     panels.append([_("Cupertino with MATE Menu"), "eleven-fresh"])
-
-            # if self.panel_layout_exists('eleven-indicators') and \
-            #    indicators_available:
-            #     panels.append([_("Cupertino with Indicators"), "eleven-indicators"])
-
-            # if self.panel_layout_exists('eleven-indicators-fresh') and \
-            #     indicators_available and \
-            #     mate_menu_available:
-            #     panels.append([_("Cupertino with Indicators and MATE Menu"), "eleven-indicators-fresh"])
-
-        # if self.panel_layout_exists('linuxmint') and \
-        #    mint_menu_available:
-        #     panels.append([_("Linux Mint"), "linuxmint"])
-
-        # if self.panel_layout_exists('opensuse') and \
-        #    gnome_menu_available:
-        #     panels.append([_("openSUSE"), "opensuse"])
 
         self.builder.get_object("combobox_panels").set_model(panels)
         self.builder.get_object("combobox_panels").set_tooltip_text(_("The new panel layout will be activated on selection and destroy any customisations you might have made."))
