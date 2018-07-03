@@ -1,33 +1,41 @@
-[Toplevel top]
+[Toplevel bottom]
 expand=true
 orientation=bottom
-size=28
+size=32
 
 [Object menu]
-object-type=brisk-menu
-toplevel-id=top
+object-type=menu
+toplevel-id=bottom
 position=0
 locked=true
 
 [Object window-list]
 object-type=applet
 applet-iid=WnckletFactory::WindowListApplet
-toplevel-id=top
+toplevel-id=bottom
 position=10
+locked=true
+
+[Object workspace-switcher]
+object-type=applet
+applet-iid=WnckletFactory::WorkspaceSwitcherApplet
+toplevel-id=bottom
+position=30
+panel-right-stick=true
 locked=true
 
 [Object notification-area]
 object-type=applet
 applet-iid=NotificationAreaAppletFactory::NotificationArea
-toplevel-id=top
-position=30
+toplevel-id=bottom
+position=20
 panel-right-stick=true
 locked=true
 
 [Object clock]
 object-type=applet
 applet-iid=ClockAppletFactory::ClockApplet
-toplevel-id=top
+toplevel-id=bottom
 position=10
 panel-right-stick=true
 locked=true
@@ -35,7 +43,7 @@ locked=true
 [Object show-desktop]
 object-type=applet
 applet-iid=WnckletFactory::ShowDesktopApplet
-toplevel-id=top
+toplevel-id=bottom
 panel-right-stick=true
 position=0
 locked=true

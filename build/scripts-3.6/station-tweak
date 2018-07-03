@@ -1,4 +1,22 @@
-#!/usr/bin/env python
+#!/usr/local/bin/python3.6
+
+# Copyright (C) 2007-2014 by Clement Lefebvre <root@linuxmint.com>
+# Copyright (C) 2015 Martin Wimpress <code@ubuntu-mate.org>
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the
+# Free Software Foundation, Inc.,
+# 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 import errno
 import gettext
@@ -6,12 +24,11 @@ import getpass
 import os
 import shutil
 from subprocess import Popen, PIPE
-import gi
-gi.require_version('Gtk', '3.0')
+
 from gi.repository import Gtk, GdkPixbuf
 from gi.repository import Gio
 
-__VERSION__ = "0.3"
+__VERSION__ = "1.0.0"
 
 # i18n
 gettext.install("station-tweak", "/usr/local/share/locale")
@@ -135,28 +152,36 @@ class StationTweak:
         Popen(['killall', dock], stdout=devnull, stderr=devnull)
         devnull.close()
 
+        # If the system autostart is missing create a user autostart.
+        if not os.path.exists('/usr/local/etc/xdg/autostart/mate-volume-control-applet.desktop'):
+            self.mkdir_p(os.path.expanduser('~/.config/autostart/'))
+            shutil.copy2('/usr/local/share/station-tweak/mate-volume-control-applet.desktop', os.path.expanduser('~/.config/autostart/'))
+
+        # If a system or user autostart exists, remove it.
+        if os.path.exists(os.path.expanduser('~/.config/autostart/') + 'mate-volume-control-applet.desktop'):
+            os.remove(os.path.expanduser('~/.config/autostart/') + 'mate-volume-control-applet.desktop')
+        if os.path.exists('/usr/local/etc/xdg/autostart/mate-volume-control-applet.desktop'):
+            Popen(['pkexec', '/usr/local/lib/station-tweak/disable-mate-volume-applet'], stdout=devnull, stderr=devnull)
+        devnull.close()
+
     def replace_panel_layout(self, panel_layout):
         # Use this in python < 3.3. Python >= 3.3 has DEVNULL
         devnull = open(os.devnull, 'wb')
         c = "gsettings set com.solus-project.brisk-menu window-type 'classic'"
         d = "gsettings set com.solus-project.brisk-menu window-type 'dash'"
-        always = "dconf write /org/mate/panel/objects/window-list/prefs/" \
-                 "group-windows '\"always\"'"
-        auto = "dconf write /org/mate/panel/objects/window-list/prefs" \
-               "/group-windows '\"auto\"'"
-        never = "dconf write /org/mate/panel/objects/window-list/prefs" \
-                "/group-windows '\"never\"'"
         if panel_layout.startswith('classy'):
-            Popen(d, stdout=devnull, stderr=devnull, shell=True)
+            Popen(d, stdout=devnull, stderr=devnull,
+                  shell=True)
         else:
-            Popen(c, stdout=devnull, stderr=devnull, shell=True)
-
+            Popen(c, stdout=devnull, stderr=devnull,
+                  shell=True)
         Popen(['killall', 'mate-panel'], stdout=devnull, stderr=devnull)
         Popen(['dconf', 'reset', '-f', '/org/mate/panel/objects/'],
               stdout=devnull, stderr=devnull)
         Popen(['dconf', 'reset', '-f', '/org/mate/panel/toplevels/'],
               stdout=devnull, stderr=devnull)
         os.system('mate-panel --layout ' + panel_layout + ' --reset')
+
         Popen(['mate-panel', '--replace'], stdout=devnull, stderr=devnull)
         devnull.close()
 
@@ -168,18 +193,10 @@ class StationTweak:
 
         if panel_layout.startswith('element') and dock is not None:
             self.enable_dock(dock)
-        elif panel_layout.startswith('classy') and dock is not None:
+        if panel_layout.startswith('classy') and dock is not None:
             self.enable_dock(dock)
         else:
             self.disable_dock(dock)
-        devnull = open(os.devnull, 'wb')
-        if panel_layout.startswith('netbook'):
-            Popen(always, stdout=devnull, stderr=devnull, shell=True)
-        elif panel_layout.startswith('purity'):
-            Popen(auto, stdout=devnull, stderr=devnull, shell=True)
-        else:
-            Popen(never, stdout=devnull, stderr=devnull, shell=True)
-        devnull.close()
 
     def panel_layout_exists(self, panel_layout):
         pth = '/usr/local/share/mate-panel/layouts/' + panel_layout + '.layout'
@@ -204,8 +221,7 @@ class StationTweak:
             # for GTK3 and GNOME.
             self.set_string("org.mate.interface", "gtk-decoration-layout",
                             value)
-            self.set_string("org.gnome.desktop.wm.preferences",
-                            "button-layout", value)
+            self.set_string("org.gnome.desktop.wm.preferences", "button-layout", value)
 
         elif schema == "org.mate.session.required-components" and key == "windowmanager":
             wm = value
@@ -276,6 +292,10 @@ class StationTweak:
            os.path.exists('/usr/local/lib/mate-indicator-applet/mate-indicator-applet'):
             indicators_available = True
 
+        mate_menu_available = False
+        if os.path.exists('/usr/local/lib/mate-menu/mate-menu.py'):
+            mate_menu_available = True
+
         maximus_available = False
         if os.path.exists('/usr/local/bin/mate-maximus') and \
            os.path.exists('/usr/local/lib/mate-netbook/mate-window-picker-applet'):
@@ -318,13 +338,11 @@ class StationTweak:
         self.builder.get_object("side_view").set_pixbuf_column(1)
         self.builder.get_object("side_view").set_model(self.store)
         self.builder.get_object("side_view").select_path(Gtk.TreePath.new_first())
-        self.builder.get_object("side_view").connect("selection_changed",
-                                                     self.side_view_nav)
+        self.builder.get_object("side_view").connect("selection_changed", self.side_view_nav )
 
         # set up larger components.
         self.builder.get_object("main_window").set_title("Station Tweak")
-        self.builder.get_object("main_window").connect("destroy",
-                                                       Gtk.main_quit)
+        self.builder.get_object("main_window").connect("destroy", Gtk.main_quit)
 
         # i18n
         self.builder.get_object("label_desktop_icons").set_markup("<b>" + _("Desktop icons") + "</b>")
