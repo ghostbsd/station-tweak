@@ -371,8 +371,8 @@ class StationTweak:
         # Window Manager page
         self.init_checkbox("org.mate.Marco.general", "reduced-resources", "checkbox_resources")
         self.init_checkbox("org.mate.Marco.general", "compositing-manager", "checkbox_compositing")
-        self.init_checkbox("org.mate.maximus", "undecorate", "checkbox_undecorate")
-        self.init_checkbox("org.mate.maximus", "no-maximize", "checkbox_always_maximize")
+        #self.init_checkbox("org.mate.maximus", "undecorate", "checkbox_undecorate")
+        #self.init_checkbox("org.mate.maximus", "no-maximize", "checkbox_always_maximize")
 
         # interface page
         self.init_checkbox("org.mate.interface", "menus-have-icons", "checkbutton_menuicon")
