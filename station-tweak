@@ -44,7 +44,7 @@ class StationTweak:
 
     def init_checkbox(self, schema, key, name):
         source = Gio.SettingsSchemaSource.get_default()
-        if source.lookup(schema, True) != None:
+        if source.lookup(schema, True) is None:
             widget = self.builder.get_object(name)
             value = self.get_bool(schema, key)
             widget.set_active(value)
@@ -52,7 +52,7 @@ class StationTweak:
 
     def init_combobox(self, schema, key, name):
         source = Gio.SettingsSchemaSource.get_default()
-        if source.lookup(schema, True) != None:
+        if source.lookup(schema, True) is None:
             widget = self.builder.get_object(name)
             conf = self.get_string(schema, key)
             index = 0
@@ -87,7 +87,7 @@ class StationTweak:
                 raise
 
     def get_current_wm(self):
-        process = Popen(['wmctrl', '-m'], stdout=PIPE)
+        process = Popen(['wmctrl', '-m'], stdout=PIPE, universal_newlines=True)
         out, err = process.communicate()
         return out
 
@@ -189,7 +189,7 @@ class StationTweak:
 
     def compiz_capable(self):
         if self.find_on_path('compiz') and self.find_on_path('glxinfo'):
-            process = Popen(['glxinfo'], stdout=PIPE)
+            process = Popen(['glxinfo'], stdout=PIPE, universal_newlines=True)
             out, err = process.communicate()
             software_rasterizer = out.count("Software Rasterizer")
             texture_from_pixmap = out.count("texture_from_pixmap")
@@ -244,7 +244,7 @@ class StationTweak:
 
     def save_panels(self, widget):
         current_user = getpass.getuser()
-        print "Saving panel layout for " + current_user
+        print("Saving panel layout for " + current_user)
 
     ''' Create the UI '''
     def __init__(self):
@@ -256,9 +256,9 @@ class StationTweak:
         self.builder.get_object("main_window").connect("destroy", Gtk.main_quit)
         self.builder.get_object("button_save_panels").connect("clicked", self.save_panels)
 
-        side_desktop_options = SidePage(0, _("Desktop"), "user-desktop")
-        side_windows = SidePage(1, _("Windows"), "preferences-system-windows")
-        side_interface = SidePage(2, _("Interface"), "preferences-desktop")
+        side_desktop_options = SidePage(0, ("Desktop"), "user-desktop")
+        side_windows = SidePage(1, ("Windows"), "preferences-system-windows")
+        side_interface = SidePage(2, ("Interface"), "preferences-desktop")
 
         # Determine the currently active window manager
         marco_mode = False
@@ -284,7 +284,7 @@ class StationTweak:
         dock = False
         if os.path.exists('/usr/local/bin/plank'):
             dock = True
-        print dock
+        print(dock)
         # Do not show Marco configuration options because Marco is not
         # currently running.
         if not marco_mode:
