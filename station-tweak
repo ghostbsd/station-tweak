@@ -44,7 +44,7 @@ class StationTweak:
 
     def init_checkbox(self, schema, key, name):
         source = Gio.SettingsSchemaSource.get_default()
-        if source.lookup(schema, True) is None:
+        if source.lookup(schema, True) is not None:
             widget = self.builder.get_object(name)
             value = self.get_bool(schema, key)
             widget.set_active(value)
@@ -52,7 +52,7 @@ class StationTweak:
 
     def init_combobox(self, schema, key, name):
         source = Gio.SettingsSchemaSource.get_default()
-        if source.lookup(schema, True) is None:
+        if source.lookup(schema, True) is not None:
             widget = self.builder.get_object(name)
             conf = self.get_string(schema, key)
             index = 0
@@ -284,7 +284,6 @@ class StationTweak:
         dock = False
         if os.path.exists('/usr/local/bin/plank'):
             dock = True
-        print(dock)
         # Do not show Marco configuration options because Marco is not
         # currently running.
         if not marco_mode:
@@ -376,7 +375,7 @@ class StationTweak:
 
         # interface page
         self.init_checkbox("org.mate.interface", "menus-have-icons", "checkbutton_menuicon")
-        self.init_checkbox("org.mate.interface", "show-input-method-menu","checkbutton_im_menu")
+        self.init_checkbox("org.mate.interface", "show-input-method-menu", "checkbutton_im_menu")
         self.init_checkbox("org.mate.interface", "show-unicode-menu", "checkbutton_unicode")
         self.init_checkbox("org.mate.interface", "buttons-have-icons", "checkbutton_button_icons")
 
