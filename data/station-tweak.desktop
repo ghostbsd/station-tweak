@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Station Tweak
+Name[da]=Finjustering af station
 Exec=station-tweak
 Icon=user-desktop
 Terminal=false
