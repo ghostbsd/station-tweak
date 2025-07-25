@@ -11,7 +11,7 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, GdkPixbuf
 from gi.repository import Gio
 
-__VERSION__ = "0.3"
+__VERSION__ = "0.8"
 
 # i18n
 gettext.install("station-tweak", "/usr/local/share/locale")
